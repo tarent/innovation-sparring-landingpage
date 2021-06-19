@@ -63,6 +63,7 @@ export default function Home() {
         <Head>
           <title>Innovation Sparring | tarent</title>
           <link rel="icon" sizes="32x32" href="/imgs/tarent-thumb-32x32.png" />
+
         </Head>
         <Popover className="relative bg-white shadow">
           {({ open }) => (

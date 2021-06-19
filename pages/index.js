@@ -1,82 +1,68 @@
 import Head from 'next/head'
+import { Fragment } from 'react'
+import { Popover } from '@headlessui/react'
+import Logo from '../imgs/tarent-logo.png';
+import InnovativeAppComponents from '../imgs/innovative-app-components.png';
+import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <div className="relative bg-gray-50">
       <Head>
-        <title>Create Next App</title>
+        <title>Innovation Sparring | tarent</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Popover className="relative bg-white shadow">
+        {({ open }) => (
+          <>
+            <div className="max-w-7xl mx-auto px-4 sm:px-6">
+              <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
+                <div className="flex justify-start lg:w-0 lg:flex-1">
+                  <a href="#">
+                    <span className="sr-only">Workflow</span>
+                    <Image
+                      className="h-8 w-auto sm:h-10"
+                      src={Logo}
+                      alt="tarent Logo"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </>
+        )}
+      </Popover>
 
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
-
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">
-            pages/index.js
-          </code>
-        </p>
-
-        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and API.
+      <main className="lg:relative">
+        <div className="mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left">
+          <div className="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
+            <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
+              <span className="block xl:inline">Dein Produkt</span>{' '}
+              <span className="block text-tarent-red xl:inline">erfolgreich am Markt.</span>
+            </h1>
+            <p className="mt-3 max-w-md mx-auto text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
+Wochenlange Beratung wird schnell teuer. Deswegen helfen wir Dir in nur 3 kurzen Sessions, deine internen Ressourcen viel effizienter zu nutzen - indem wir deine Innovation bewerten, ihren Fokus schärfen und dir helfen die riskantesten Annahmen zu validieren.
             </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+            <div className="mt-10 sm:flex sm:justify-center lg:justify-start">
+              <div className="rounded-md shadow">
+                <a
+                  href="#"
+                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-tarent-red hover:bg-tarent-red-700 md:py-4 md:text-lg md:px-10"
+                >
+                  Vereinbare Dein Sparring
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
+          <Image
+            className="absolute inset-0 w-full h-full object-cover"
+            src={InnovativeAppComponents}
+            alt="Componentes of an innovative Idea"
+          />
         </div>
       </main>
-
-      <footer className="flex items-center justify-center w-full h-24 border-t">
-        <a
-          className="flex items-center justify-center"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
-        </a>
-      </footer>
     </div>
   )
 }

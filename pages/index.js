@@ -3,12 +3,12 @@ import { Fragment } from 'react'
 import { Popover } from '@headlessui/react'
 
 import Image from 'next/image'
-import Logo from '../static/imgs/tarent-logo.png';
-import InnovativeAppComponents from '../static/imgs/innovative-app-components.png';
-import TorstenHamperImg from '../static/imgs/torsten-hamper.png';
-import AssessmentIcon from '../static/imgs/assessment.png'
-import FocusIcon from '../static/imgs/focus.png'
-import ValidationIcon from '../static/imgs/validation.png'
+import Logo from '../public/imgs/tarent-logo.png';
+import InnovativeAppComponents from '../public/imgs/innovative-app-components.png';
+import TorstenHamperImg from '../public/imgs/torsten-hamper.png';
+import AssessmentIcon from '../public/imgs/assessment.png'
+import FocusIcon from '../public/imgs/focus.png'
+import ValidationIcon from '../public/imgs/validation.png'
 
 import { GlobeAltIcon, LightningBoltIcon, ScaleIcon } from '@heroicons/react/outline'
 
@@ -37,7 +37,7 @@ const people = [
   {
     name: 'Frederik Vosberg',
     role: 'Consultant für Lean Innovation',
-    imageUrl: '/static/imgs/frederik-vosberg-portrait.jpg',
+    imageUrl: '/imgs/frederik-vosberg-portrait.jpg',
     bio: 'Mein Ziel ist es, Geschäftsmodelle im Anfang so sehr zu spitzen, dass sie schnell validierbar sind mit Produkten, die so attraktiv sind, dass sie sich selbst verkaufen.',
   },
   {
@@ -62,7 +62,7 @@ export default function Home() {
       <div className="relative bg-gray-50">
         <Head>
           <title>Innovation Sparring | tarent</title>
-          <link rel="icon" sizes="32x32" href="/static/imgs/tarent-thumb-32x32.png" />
+          <link rel="icon" sizes="32x32" href="/imgs/tarent-thumb-32x32.png" />
         </Head>
         <Popover className="relative bg-white shadow">
           {({ open }) => (

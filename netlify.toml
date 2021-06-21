@@ -8,3 +8,15 @@
   to = "/sparring"
   status = 302
   force = false
+
+# Production context:
+# All deploys from the main repository branch
+# will inherit these settings.
+[context.production]
+  [context.production.environment]
+    GA_TRACKING_ID = "G-VL5DL6QKZ2"
+
+# Context for the staging branch
+[context.staging]
+  [context.staging.environment]
+    GA_TRACKING_ID = "G-VL5DL6QKZ2"

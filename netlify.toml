@@ -1,0 +1,10 @@
+[build]
+	command = "npm run build"
+	publish = "out"
+
+# please add new redirects to next.config.js as well for local development
+[[redirects]]
+  from = "/"
+  to = "/sparring"
+  status = 302
+  force = false

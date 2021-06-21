@@ -1,6 +1,9 @@
 [build]
-	command = "npm run build"
-	publish = "out"
+  command = "npm run build"
+  publish = "out"
+
+[build.environment]
+  GOOGLE_TAG_MANAGER_ID = "GTM-WZ64VB3"
 
 # please add new redirects to next.config.js as well for local development
 [[redirects]]
@@ -14,9 +17,7 @@
 # will inherit these settings.
 [context.production]
   [context.production.environment]
-    GA_TRACKING_ID = "G-VL5DL6QKZ2"
 
 # Context for the staging branch
 [context.staging]
   [context.staging.environment]
-    GA_TRACKING_ID = "G-VL5DL6QKZ2"

@@ -215,11 +215,17 @@ export default function Home() {
             Ganz ohne Risiko! Nach der ersten Session kannst du entscheiden, ob es weiter geht. Falls nicht, musst Du auch nichts zahlen.
           </p>
           <a
-            href="#"
+            href="https://meetings.hubspot.com/frederik-vosberg"
             className="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md bg-white hover:bg-indigo-50 sm:w-auto text-tarent-black"
           >
             Erzähle uns von Deiner Idee!
           </a>
+          <p className="text-xs text-gray-200 mt-5">
+            Sie haben die Möglichkeit, sich über diesen Weg einen freien Kontakttermin im Kalender eines tarent-Ansprechpartners zu buchen.
+Für diese Funktion nutzen wir den Service der Firma Hubspot.
+
+Die Datenschutzerklärung der Firma Hubspot finden Sie unter <a href="https://legal.hubspot.com/de/privacy-policy">https://legal.hubspot.com/de/privacy-policy</a>.
+          </p>
         </div>
       </div>
 

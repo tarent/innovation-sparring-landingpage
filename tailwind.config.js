@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   mode: 'jit',
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
@@ -11,10 +13,13 @@ module.exports = {
           black: '#333333',
         },
       },
+      fontFamily: {
+        sans: [ '"Ubuntu"', ...defaultTheme.fontFamily.sans ],
+      }
     },
   },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
+  variants: {},
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+  ],
 }

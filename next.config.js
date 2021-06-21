@@ -1,3 +1,12 @@
 module.exports = {
-  target: "serverless"
+  target: "serverless",
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/sparring',
+        permanent: false
+      }
+    ]
+  }
 }

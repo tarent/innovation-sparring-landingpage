@@ -3,8 +3,8 @@ import { Fragment } from 'react';
 import { Popover } from '@headlessui/react';
 
 import Image from 'next/image';
-import Logo from '../public/imgs/tarent-logo.png';
-import InnovativeAppComponents from '../public/imgs/innovative-app-components.png';
+import logo from '../public/imgs/logo.svg';
+import growth from '../public/imgs/growth.svg';
 import TorstenHamperImg from '../public/imgs/torsten-hamper.png';
 import AssessmentIcon from '../public/imgs/assessment.png';
 import FocusIcon from '../public/imgs/focus.png';
@@ -73,16 +73,14 @@ export default function Home() {
             <>
               <div className="max-w-7xl mx-auto px-4 sm:px-6">
                 <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
-                  <div className="flex justify-start lg:w-0 lg:flex-1">
-                    <a href="#">
-                      <span className="sr-only">tarent</span>
-                      <Image
-                        className="h-8 w-auto sm:h-10"
-                        src={Logo}
-                        alt="tarent Logo"
-                      />
-                    </a>
-                    <h2 className="text-2xl leading-7 text-gray-900 sm:text-3xl sm:truncate ml-3">
+                  <div className="flex justify-start lg:w-0 lg:flex-1 items-center">
+                    <Image
+                      src={logo}
+                      alt="tarent Logo"
+                      height={36}
+                      width={36}
+                    />
+                    <h2 className="text-lg leading-7 text-gray-900 sm:text-lg sm:truncate ml-3">
                       Innovation Sparring
                     </h2>
                   </div>
@@ -120,11 +118,11 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="relative hidden h-64 sm:h-72 md:h-96 lg:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
+          <div className="relative hidden h-64 sm:h-72 md:h-96 lg:block lg:absolute lg:inset-y-12 lg:right-12 lg:w-1/2 lg:h-full">
             <Image
               className="object-contain relative bottom-0 right-0"
-              src={InnovativeAppComponents}
-              alt="Componentes of an innovative Idea"
+              src={growth}
+              alt="Dein Produkt erfolgreich am Markt"
             />
           </div>
         </main>
@@ -261,7 +259,7 @@ export default function Home() {
             Sie haben die Möglichkeit, sich über diesen Weg einen freien
             Kontakttermin im Kalender eines tarent-Ansprechpartners zu buchen.
             Für diese Funktion nutzen wir den Service der Firma Hubspot. Die
-            Datenschutzerklärung der Firma Hubspot finden Sie{' '}
+            Datenschutzerklärung der Firma Hubspot findest Du{' '}
             <a
               href="https://legal.hubspot.com/de/privacy-policy"
               target="_blank"

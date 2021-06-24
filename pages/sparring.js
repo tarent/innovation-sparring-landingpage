@@ -1,16 +1,20 @@
-import Head from 'next/head'
-import { Fragment } from 'react'
-import { Popover } from '@headlessui/react'
+import Head from 'next/head';
+import { Fragment } from 'react';
+import { Popover } from '@headlessui/react';
 
-import Image from 'next/image'
+import Image from 'next/image';
 import Logo from '../public/imgs/tarent-logo.png';
 import InnovativeAppComponents from '../public/imgs/innovative-app-components.png';
 import TorstenHamperImg from '../public/imgs/torsten-hamper.png';
-import AssessmentIcon from '../public/imgs/assessment.png'
-import FocusIcon from '../public/imgs/focus.png'
-import ValidationIcon from '../public/imgs/validation.png'
+import AssessmentIcon from '../public/imgs/assessment.png';
+import FocusIcon from '../public/imgs/focus.png';
+import ValidationIcon from '../public/imgs/validation.png';
 
-import { GlobeAltIcon, LightningBoltIcon, ScaleIcon } from '@heroicons/react/outline'
+import {
+  GlobeAltIcon,
+  LightningBoltIcon,
+  ScaleIcon,
+} from '@heroicons/react/outline';
 
 const features = [
   {
@@ -38,16 +42,16 @@ const people = [
     name: 'Frederik Vosberg',
     role: 'Consultant für Lean Innovation',
     imageUrl: '/imgs/frederik-vosberg-portrait.jpg',
-    bio: 'Mein Ziel ist es, Geschäftsmodelle im Anfang so sehr zu spitzen, dass sie schnell validierbar sind mit Produkten, die so attraktiv sind, dass sie sich selbst verkaufen.',
+    bio: 'Frederiks Ziel ist es, Geschäftsmodelle im Anfang so sehr zu spitzen, dass sie schnell validierbar sind mit Produkten, die so attraktiv sind, dass sie sich selbst verkaufen.',
   },
   {
     name: 'Timothy Krechel',
     role: 'MVP-Consultant',
-    imageUrl: 'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    bio: 'Ich versetze Innovator*innen in die Lage, sich auf die wertschöpfendsten Aspekte ihrer Ideen zu fokussieren und sie schnellstmöglich am Markt zu verproben.',
+    imageUrl: '/imgs/timothy-krechel-portrait.jpg',
+    bio: 'Timothy hat als Ex-Startup-Gründer vor allem gelernt, wie wichtig das Hinterfragen der eigenen Idee ist. Deshalb liegt sein Fokus auf dem frühstmöglichen Validieren von Annahmen durch echtes Feedback am Markt mittels leichtgewichtiger Prototypen, die den Kernnutzen einer Idee herausstellen.',
   },
   // More people...
-]
+];
 
 const footerNavigation = {
   main: [
@@ -63,7 +67,6 @@ export default function Home() {
         <Head>
           <title>Innovation Sparring | tarent</title>
           <link rel="icon" sizes="32x32" href="/imgs/tarent-thumb-32x32.png" />
-
         </Head>
         <Popover className="relative bg-white shadow">
           {({ open }) => (
@@ -79,7 +82,9 @@ export default function Home() {
                         alt="tarent Logo"
                       />
                     </a>
-                    <h2 className="text-2xl leading-7 text-gray-900 sm:text-3xl sm:truncate ml-3">Innovation Sparring</h2>
+                    <h2 className="text-2xl leading-7 text-gray-900 sm:text-3xl sm:truncate ml-3">
+                      Innovation Sparring
+                    </h2>
                   </div>
                 </div>
               </div>
@@ -92,10 +97,16 @@ export default function Home() {
             <div className="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
               <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
                 <span className="block xl:inline">Dein Produkt</span>{' '}
-                <span className="block text-tarent-red xl:inline">erfolgreich am Markt.</span>
+                <span className="block text-tarent-red xl:inline">
+                  erfolgreich am Markt.
+                </span>
               </h1>
               <p className="mt-3 max-w-md mx-auto text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
-  Wochenlange Beratung wird schnell teuer. Deswegen helfen wir Dir in nur 3 kurzen Sessions, deine internen Ressourcen viel effizienter zu nutzen - indem wir deine Innovation bewerten, ihren Fokus schärfen und dir helfen die riskantesten Annahmen zu validieren.
+                Wochenlange Beratung wird schnell teuer. Deswegen helfen wir Dir
+                in nur 3 kurzen Sessions, deine internen Ressourcen viel
+                effizienter zu nutzen - indem wir deine Innovation bewerten,
+                ihren Fokus schärfen und dir helfen die riskantesten Annahmen zu
+                validieren.
               </p>
               <div className="mt-10 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
@@ -121,15 +132,25 @@ export default function Home() {
 
       <div className="py-12 bg-tarent-red text-white">
         <div className="max-w-xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl mb-12">In 3 Sessions zum erfolgreichen Produkt</h2>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl mb-12 text-center">
+            In 3 Sessions zum erfolgreichen Produkt
+          </h2>
           <dl className="space-y-10 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-8">
             {features.map((feature) => (
-              <div key={feature.name}>
-                <dt>
-                  <div className="flex items-center justify-center h-12 w-12 rounded-md">
-                    <Image src={feature.icon} className="h-8 w-8" aria-hidden="true" />
+              <div key={feature.name} className="text-center">
+                <dt className="flex justify-center flex-wrap">
+                  <div className="w-full flex justify-center ">
+                    <div className="w-24 h-24">
+                      <Image
+                        src={feature.icon}
+                        aria-hidden="true"
+                        alt={feature.description}
+                      />
+                    </div>
                   </div>
-                  <p className="mt-5 text-lg leading-6 font-medium">{feature.name}</p>
+                  <h3 className="mt-5 text-2xl leading-6 font-medium">
+                    {feature.name}
+                  </h3>
                 </dt>
                 <dd className="mt-2 text-base">{feature.description}</dd>
               </div>
@@ -144,7 +165,8 @@ export default function Home() {
             <blockquote className="mt-10">
               <div className="max-w-3xl mx-auto text-center text-2xl leading-9 font-medium text-gray-900">
                 <p>
-                  &ldquo;tarent begleitet uns von Beginn an auf dem Weg, der beste Cross Channel DIY-Händler Deutschlands zu werden.&rdquo;
+                  &ldquo;tarent begleitet uns von Beginn an auf dem Weg, der
+                  beste Cross Channel DIY-Händler Deutschlands zu werden.&rdquo;
                 </p>
               </div>
               <footer className="mt-8">
@@ -159,13 +181,21 @@ export default function Home() {
                     />
                   </div>
                   <div className="mt-3 text-center md:mt-0 md:ml-4 md:flex md:items-center">
-                    <div className="text-base font-medium text-gray-900">Torsten Hamper</div>
+                    <div className="text-base font-medium text-gray-900">
+                      Torsten Hamper
+                    </div>
 
-                    <svg className="hidden md:block mx-1 h-5 w-5 text-tarent-red" fill="currentColor" viewBox="0 0 20 20">
+                    <svg
+                      className="hidden md:block mx-1 h-5 w-5 text-tarent-red"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
                       <path d="M11 0h3L9 20H6l5-20z" />
                     </svg>
 
-                    <div className="text-base font-medium text-gray-500">CTO Cross Channel, toom</div>
+                    <div className="text-base font-medium text-gray-500">
+                      CTO Cross Channel, toom
+                    </div>
                   </div>
                 </div>
               </footer>
@@ -177,14 +207,20 @@ export default function Home() {
       <div className="bg-white">
         <div className="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
           <div className="space-y-12">
-            <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">Wir beschleunigen Ideen</h2>
+            <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
+              Wir beschleunigen Ideen
+            </h2>
 
             <ul className="space-y-12 lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8 lg:gap-y-12 lg:space-y-0">
               {people.map((person) => (
                 <li key={person.name}>
                   <div className="space-y-4 sm:grid sm:grid-cols-3 sm:gap-6 sm:space-y-0 lg:gap-8">
                     <div className="h-0 aspect-w-3 aspect-h-2 sm:aspect-w-3 sm:aspect-h-4">
-                      <img className="object-cover shadow-lg rounded-lg" src={person.imageUrl} alt="" />
+                      <img
+                        className="object-cover shadow-lg rounded-lg"
+                        src={person.imageUrl}
+                        alt=""
+                      />
                     </div>
                     <div className="sm:col-span-2">
                       <div className="space-y-4">
@@ -206,43 +242,61 @@ export default function Home() {
       </div>
 
       <div id="cta" className="bg-tarent-red text-white">
-        <div className="max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
+        <div className="max-w-3xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-extrabold sm:text-4xl">
-            <span className="block">Buche Deine 3 Sparring Sessions</span>
-            <span className="block">für 999,-€.</span>
+            Buche Deine 3 Sparring Sessions <br />
+            für 999€
           </h2>
           <p className="mt-4 text-lg leading-6">
-            Ganz ohne Risiko! Nach der ersten Session kannst du entscheiden, ob es weiter geht. Falls nicht, musst Du auch nichts zahlen.
+            Ganz ohne Risiko! Nach der ersten Session kannst du entscheiden, ob
+            es weiter geht. Falls nicht, musst Du auch nichts zahlen.
           </p>
           <a
             href="https://meetings.hubspot.com/frederik-vosberg"
-            className="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md bg-white hover:bg-indigo-50 sm:w-auto text-tarent-black"
+            className="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md bg-white hover:bg-red-50 text-tarent-black"
           >
             Erzähle uns von Deiner Idee!
           </a>
-          <p className="text-xs text-gray-200 mt-5">
-            Sie haben die Möglichkeit, sich über diesen Weg einen freien Kontakttermin im Kalender eines tarent-Ansprechpartners zu buchen.
-Für diese Funktion nutzen wir den Service der Firma Hubspot.
-
-Die Datenschutzerklärung der Firma Hubspot finden Sie unter <a href="https://legal.hubspot.com/de/privacy-policy">https://legal.hubspot.com/de/privacy-policy</a>.
+          <p className="text-xs text-red-200 mt-5">
+            Sie haben die Möglichkeit, sich über diesen Weg einen freien
+            Kontakttermin im Kalender eines tarent-Ansprechpartners zu buchen.
+            Für diese Funktion nutzen wir den Service der Firma Hubspot. Die
+            Datenschutzerklärung der Firma Hubspot finden Sie{' '}
+            <a
+              href="https://legal.hubspot.com/de/privacy-policy"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="underline hover:text-gray-50"
+            >
+              hier
+            </a>
+            .
           </p>
         </div>
       </div>
 
       <footer className="bg-white">
         <div className="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
-          <nav className="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
+          <nav
+            className="-mx-5 -my-2 flex flex-wrap justify-center"
+            aria-label="Footer"
+          >
             {footerNavigation.main.map((item) => (
               <div key={item.name} className="px-5 py-2">
-                <a href={item.href} className="text-base text-gray-500 hover:text-gray-900">
+                <a
+                  href={item.href}
+                  className="text-base text-gray-500 hover:text-gray-900"
+                >
                   {item.name}
                 </a>
               </div>
             ))}
           </nav>
-          <p className="mt-8 text-center text-base text-gray-400">&copy; 2021 tarent solutions GmbH. All rights reserved.</p>
+          <p className="mt-8 text-center text-base text-gray-400">
+            &copy; 2021 tarent solutions GmbH. All rights reserved.
+          </p>
         </div>
       </footer>
     </div>
-  )
+  );
 }

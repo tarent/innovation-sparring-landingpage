@@ -50,7 +50,6 @@ const people = [
     imageUrl: '/imgs/timothy-krechel-portrait.jpg',
     bio: 'Timothy hat als Ex-Startup-Gründer vor allem gelernt, wie wichtig das Hinterfragen der eigenen Idee ist. Deshalb liegt sein Fokus auf dem frühstmöglichen Validieren von Annahmen durch echtes Feedback am Markt mittels leichtgewichtiger Prototypen, die den Kernnutzen einer Idee herausstellen.',
   },
-  // More people...
 ];
 
 const footerNavigation = {
@@ -74,8 +73,8 @@ export default function Home() {
               <div className="max-w-7xl mx-auto px-4 sm:px-6">
                 <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
                   <div className="flex justify-start lg:w-0 lg:flex-1 items-center">
-                    <Image
-                      src={logo}
+                    <img
+                      src={logo.src}
                       alt="tarent Logo"
                       height={36}
                       width={36}
@@ -119,10 +118,12 @@ export default function Home() {
             </div>
           </div>
           <div className="relative hidden h-64 sm:h-72 md:h-96 lg:block lg:absolute lg:inset-y-12 lg:right-12 lg:w-1/2 lg:h-full">
-            <Image
+            <img
               className="object-contain relative bottom-0 right-0"
-              src={growth}
+              src={growth.src}
               alt="Dein Produkt erfolgreich am Markt"
+              height={growth.height}
+              width={growth.width}
             />
           </div>
         </main>

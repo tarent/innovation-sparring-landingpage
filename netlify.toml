@@ -14,7 +14,7 @@
 
 [[redirects]]
   from = "/lean-canvas"
-  to = "https://lean-canvas-tarent.netlify.app"
+  to = "https://lean-canvas-tarent.netlify.app/lean-canvas"
   status = 200
   force = true
 

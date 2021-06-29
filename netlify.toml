@@ -12,12 +12,6 @@
   status = 302
   force = false
 
-[[redirects]]
-  from = "/lean-canvas"
-  to = "https://lean-canvas-tarent.netlify.app/:splat"
-  status = 200
-  force = true
-
 # Production context:
 # All deploys from the main repository branch
 # will inherit these settings.

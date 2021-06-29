@@ -12,6 +12,12 @@
   status = 302
   force = false
 
+[[redirects]]
+  from = "/lean-canvas"
+  to = "https://60db1bb54ba1e6cdf4d3159d--serene-ptolemy-a0f690.netlify.app"
+  status = 302
+  force = true
+
 # Production context:
 # All deploys from the main repository branch
 # will inherit these settings.

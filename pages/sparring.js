@@ -243,12 +243,10 @@ export default function Home() {
       <div id="cta" className="bg-tarent-red text-white">
         <div className="max-w-3xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-extrabold sm:text-4xl">
-            Buche Deine 3 Sparring Sessions <br />
-            für 999€
+            Welche Idee verfolgst Du?
           </h2>
           <p className="mt-4 text-lg leading-6">
-            Ganz ohne Risiko! Nach der ersten Session kannst du entscheiden, ob
-            es weiter geht. Falls nicht, musst Du auch nichts zahlen.
+            Wir brennen darauf, von deiner Idee zu hören. Egal, ob das Projekt schon im Gange ist, irgendwie nicht ins Laufen kommt oder bis jetzt nur in Deinem Kopf ist.
           </p>
           <a
             href="https://meetings.hubspot.com/frederik-vosberg"
@@ -257,7 +255,7 @@ export default function Home() {
             Erzähle uns von Deiner Idee!
           </a>
           <p className="text-xs text-red-200 mt-5">
-            Sie haben die Möglichkeit, sich über diesen Weg einen freien
+            Du hast die Möglichkeit, dir über diesen Weg einen freien
             Kontakttermin im Kalender eines tarent-Ansprechpartners zu buchen.
             Für diese Funktion nutzen wir den Service der Firma Hubspot. Die
             Datenschutzerklärung der Firma Hubspot findest Du{' '}

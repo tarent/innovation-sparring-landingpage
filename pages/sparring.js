@@ -100,7 +100,7 @@ export default function Home() {
               </h1>
               <p className="mt-3 max-w-md mx-auto text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
                 Wochenlange Beratung wird schnell teuer. Deswegen helfen wir Dir
-                in nur 3 kurzen Sessions, deine internen Ressourcen viel
+                in kurzen Sessions, deine internen Ressourcen viel
                 effizienter zu nutzen - indem wir deine Innovation bewerten,
                 ihren Fokus schärfen und dir helfen die riskantesten Annahmen zu
                 validieren.
@@ -132,7 +132,7 @@ export default function Home() {
       <div className="py-12 bg-tarent-red text-white">
         <div className="max-w-xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl mb-12 text-center">
-            In 3 Sessions zum erfolgreichen Produkt
+            In 3 Schritten zum erfolgreichen Produkt
           </h2>
           <dl className="space-y-10 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-8">
             {features.map((feature) => (
@@ -247,6 +247,9 @@ export default function Home() {
           </h2>
           <p className="mt-4 text-lg leading-6">
             Wir brennen darauf, von deiner Idee zu hören. Egal, ob das Projekt schon im Gange ist, irgendwie nicht ins Laufen kommt oder bis jetzt nur in Deinem Kopf ist.
+          </p>
+          <p className="mt-4 text-lg leading-6">
+            Das Erstgespräch ist unverbindlich, weil wir neugierig darauf sind, welche Ideen darauf warten umgesetzt zu werden. Dennoch ist es explizites Ziel, schon im ersten Gespräch den nächsten Schritt mit dem größten Impact zu definieren.
           </p>
           <a
             href="https://meetings.hubspot.com/frederik-vosberg"

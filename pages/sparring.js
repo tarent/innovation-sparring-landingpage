@@ -246,10 +246,7 @@ export default function Home() {
             Welche Idee verfolgst Du?
           </h2>
           <p className="mt-4 text-lg leading-6">
-            Wir brennen darauf, von deiner Idee zu hören. Egal, ob das Projekt schon im Gange ist, irgendwie nicht ins Laufen kommt oder bis jetzt nur in Deinem Kopf ist.
-          </p>
-          <p className="mt-4 text-lg leading-6">
-            Das Erstgespräch ist unverbindlich, weil wir neugierig darauf sind, welche Ideen darauf warten umgesetzt zu werden. Dennoch ist es explizites Ziel, schon im ersten Gespräch den nächsten Schritt mit dem größten Impact zu definieren.
+            In einem unverbindlichen Gespräch helfen wir dir beim nächsten Schritt deiner Idee. Egal, ob das Projekt schon im Gange ist, irgendwie nicht ins Laufen kommt oder bis jetzt nur in Deinem Kopf ist.
           </p>
           <a
             href="https://meetings.hubspot.com/frederik-vosberg"

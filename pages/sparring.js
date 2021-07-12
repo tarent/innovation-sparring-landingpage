@@ -1,14 +1,17 @@
 import Head from 'next/head';
-import { Fragment } from 'react';
-import { Popover } from '@headlessui/react';
+
+import Header from '../components/header';
 
 import Image from 'next/image';
-import logo from '../public/imgs/logo.svg';
 import growth from '../public/imgs/growth.svg';
-import TorstenHamperImg from '../public/imgs/torsten-hamper.png';
+
 import AssessmentIcon from '../public/imgs/assessment.png';
 import FocusIcon from '../public/imgs/focus.png';
 import ValidationIcon from '../public/imgs/validation.png';
+
+import HamperTestimonial from '../components/testimonials/hamper';
+import Timorik from '../components/timorik';
+import Footer from '../components/footer';
 
 import {
   GlobeAltIcon,
@@ -37,27 +40,6 @@ const features = [
   },
 ];
 
-const people = [
-  {
-    name: 'Frederik Vosberg',
-    role: 'Consultant für Lean Innovation',
-    imageUrl: '/imgs/frederik-vosberg-portrait.jpg',
-    bio: 'Frederiks Ziel ist es, Geschäftsmodelle im Anfang so sehr zu spitzen, dass sie schnell validierbar sind mit Produkten, die so attraktiv sind, dass sie sich selbst verkaufen.',
-  },
-  {
-    name: 'Timothy Krechel',
-    role: 'MVP-Consultant',
-    imageUrl: '/imgs/timothy-krechel-portrait.jpg',
-    bio: 'Timothy hat als Ex-Startup-Gründer vor allem gelernt, wie wichtig das Hinterfragen der eigenen Idee ist. Deshalb liegt sein Fokus auf dem frühstmöglichen Validieren von Annahmen durch echtes Feedback am Markt mittels leichtgewichtiger Prototypen, die den Kernnutzen einer Idee herausstellen.',
-  },
-];
-
-const footerNavigation = {
-  main: [
-    { name: 'Impressum', href: 'https://www.tarent.de/impressum' },
-    { name: 'Datenschutz', href: 'https://www.tarent.de/datenschutz' },
-  ],
-};
 
 export default function Home() {
   return (
@@ -67,27 +49,8 @@ export default function Home() {
           <title>Innovation Sparring | tarent</title>
           <link rel="icon" sizes="32x32" href="/imgs/tarent-thumb-32x32.png" />
         </Head>
-        <Popover className="relative bg-white shadow">
-          {({ open }) => (
-            <>
-              <div className="max-w-7xl mx-auto px-4 sm:px-6">
-                <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
-                  <div className="flex justify-start lg:w-0 lg:flex-1 items-center">
-                    <img
-                      src={logo.src}
-                      alt="tarent Logo"
-                      height={36}
-                      width={36}
-                    />
-                    <h2 className="text-lg leading-7 text-gray-900 sm:text-lg sm:truncate ml-3">
-                      Innovation Sparring
-                    </h2>
-                  </div>
-                </div>
-              </div>
-            </>
-          )}
-        </Popover>
+
+        <Header title="Innovation Sparring" />
 
         <main className="lg:relative">
           <div className="mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left">
@@ -158,87 +121,8 @@ export default function Home() {
         </div>
       </div>
 
-      <section className="py-12 bg-gray-50 overflow-hidden md:py-20 lg:py-24">
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="relative">
-            <blockquote className="mt-10">
-              <div className="max-w-3xl mx-auto text-center text-2xl leading-9 font-medium text-gray-900">
-                <p>
-                  &ldquo;tarent begleitet uns von Beginn an auf dem Weg, der
-                  beste Cross Channel DIY-Händler Deutschlands zu werden.&rdquo;
-                </p>
-              </div>
-              <footer className="mt-8">
-                <div className="md:flex md:items-center md:justify-center">
-                  <div className="md:flex-shrink-0">
-                    <Image
-                      className="mx-auto h-10 w-10 rounded-full"
-                      src={TorstenHamperImg}
-                      alt="Torsten Hamper Portrait"
-                      width="40"
-                      height="40"
-                    />
-                  </div>
-                  <div className="mt-3 text-center md:mt-0 md:ml-4 md:flex md:items-center">
-                    <div className="text-base font-medium text-gray-900">
-                      Torsten Hamper
-                    </div>
-
-                    <svg
-                      className="hidden md:block mx-1 h-5 w-5 text-tarent-red"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="M11 0h3L9 20H6l5-20z" />
-                    </svg>
-
-                    <div className="text-base font-medium text-gray-500">
-                      CTO Cross Channel, toom
-                    </div>
-                  </div>
-                </div>
-              </footer>
-            </blockquote>
-          </div>
-        </div>
-      </section>
-
-      <div className="bg-white">
-        <div className="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
-          <div className="space-y-12">
-            <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
-              Wir beschleunigen Ideen
-            </h2>
-
-            <ul className="space-y-12 lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8 lg:gap-y-12 lg:space-y-0">
-              {people.map((person) => (
-                <li key={person.name}>
-                  <div className="space-y-4 sm:grid sm:grid-cols-3 sm:gap-6 sm:space-y-0 lg:gap-8">
-                    <div className="h-0 aspect-w-3 aspect-h-2 sm:aspect-w-3 sm:aspect-h-4">
-                      <img
-                        className="object-cover shadow-lg rounded-lg"
-                        src={person.imageUrl}
-                        alt=""
-                      />
-                    </div>
-                    <div className="sm:col-span-2">
-                      <div className="space-y-4">
-                        <div className="text-lg leading-6 font-medium space-y-1">
-                          <h3>{person.name}</h3>
-                          <p className="text-tarent-red">{person.role}</p>
-                        </div>
-                        <div className="text-lg">
-                          <p className="text-gray-500">{person.bio}</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </div>
+      <HamperTestimonial />
+      <Timorik />
 
       <div id="cta" className="bg-tarent-red text-white">
         <div className="max-w-3xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
@@ -252,7 +136,7 @@ export default function Home() {
             Das Erstgespräch ist unverbindlich, weil wir neugierig darauf sind, welche Ideen darauf warten umgesetzt zu werden. Dennoch ist es explizites Ziel, schon im ersten Gespräch den nächsten Schritt mit dem größten Impact zu definieren.
           </p>
           <a
-            href="https://meetings.hubspot.com/frederik-vosberg"
+            href="https://meetings.hubspot.com/frederik-vosberg/innovation-sparring"
             className="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md bg-white hover:bg-red-50 text-tarent-black"
           >
             Erzähle uns von Deiner Idee!
@@ -275,28 +159,7 @@ export default function Home() {
         </div>
       </div>
 
-      <footer className="bg-white">
-        <div className="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
-          <nav
-            className="-mx-5 -my-2 flex flex-wrap justify-center"
-            aria-label="Footer"
-          >
-            {footerNavigation.main.map((item) => (
-              <div key={item.name} className="px-5 py-2">
-                <a
-                  href={item.href}
-                  className="text-base text-gray-500 hover:text-gray-900"
-                >
-                  {item.name}
-                </a>
-              </div>
-            ))}
-          </nav>
-          <p className="mt-8 text-center text-base text-gray-400">
-            &copy; 2021 tarent solutions GmbH. All rights reserved.
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

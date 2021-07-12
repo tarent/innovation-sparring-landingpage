@@ -1,6 +1,3 @@
-import TorstenHamperImg from '../../public/imgs/torsten-hamper.png';
-import Image from 'next/image';
-
 export default function Hamper() {
   return (
       <section className="py-12 bg-gray-50 overflow-hidden md:py-20 lg:py-24">
@@ -16,9 +13,9 @@ export default function Hamper() {
               <footer className="mt-8">
                 <div className="md:flex md:items-center md:justify-center">
                   <div className="md:flex-shrink-0">
-                    <Image
+                    <img
                       className="mx-auto h-10 w-10 rounded-full"
-                      src={TorstenHamperImg}
+                      src="/imgs/torsten-hamper.png"
                       alt="Torsten Hamper Portrait"
                       width="40"
                       height="40"

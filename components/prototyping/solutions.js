@@ -15,7 +15,7 @@ export default function PrototypingSolutions() {
                       <p className="text-tarent-red">So erstellt ihr eure eigenen Prototypen</p>
                     </div>
                     <div className="text-lg leading-7">
-                      <p className="text-gray-500">Sowohl für gezeichnete Prototypen, als auch welche aus Papier, bietet es sich an die Prototypenerstellung "on the job" zu lernen. Aber auch für digitale oder sogar native Prototypen bieten wir Workshops an.</p>
+                      <p className="text-gray-500">Sowohl für gezeichnete Prototypen, als auch welche aus Papier, bietet es sich an die Prototypenerstellung &quot;on the job&quot; zu lernen. Aber auch für digitale oder sogar native Prototypen bieten wir Workshops an.</p>
                     </div>
                   </div>
                 </li>

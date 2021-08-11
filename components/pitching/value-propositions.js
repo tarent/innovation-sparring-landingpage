@@ -3,11 +3,12 @@ export default function ValuePropositions() {
       <div className="py-12 bg-white">
         <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:text-center">
-            <p className="text-base leading-6 text-tarent-red font-semibold tracking-wide uppercase">Wann helfen Prototypen?</p>
-            <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">Durch Prototypen schnellere Ergebnisse</h3>
+            <p className="text-base leading-6 text-tarent-red font-semibold tracking-wide uppercase">Wann überzeugt Dein Pitch?</p>
+            <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">Maximiere Deine Erfolgswahrscheinlichkeit</h3>
           </div>
-          <div className="mt-10">
-            <ul className="md:grid md:grid-cols-2 md:col-gap-8 md:row-gap-10"><li>
+          <div className="mt-10 mb-8">
+            <ul className="md:grid md:grid-cols-2 md:col-gap-16 md:row-gap-16">
+              <li>
                 <div className="flex">
                   <div className="flex-shrink-0">
                     <div className="flex items-center justify-center h-12 w-12 rounded-md bg-tarent-red text-white">
@@ -17,12 +18,12 @@ export default function ValuePropositions() {
                     </div>
                   </div>
                   <div className="ml-4">
-                    <h4 className="text-lg leading-6 font-medium text-gray-900">Visualisieren und erklären einer Vision</h4>
-                    <p className="mt-2 text-base leading-6 text-gray-500">Eine Idee ist viel leichter vermittelbar, wenn man sie konkret anfassen kann. Sowohl beim Pitchen einer Idee, als auch beim Weiterentwickeln im Team vereinfacht eine Visualisierung den Prozess.</p>
+                    <h4 className="text-lg leading-6 font-medium text-gray-900">Eine klare Vision</h4>
+                    <p className="mt-2 text-base leading-6 text-gray-500">Ein sinnvoller MVP-Schnitt überzeugt durch ein optimales Investitions-Mehrwert-Verhältnis.</p>
                   </div>
                 </div>
               </li>
-              <li className="mt-10 md:mt-0">
+              <li className="mt-10 md:mt-0 mb-8">
                 <div className="flex">
                   <div className="flex-shrink-0">
                     <div className="flex items-center justify-center h-12 w-12 rounded-md bg-tarent-red text-white">
@@ -32,12 +33,12 @@ export default function ValuePropositions() {
                     </div>
                   </div>
                   <div className="ml-4">
-                    <h4 className="text-lg leading-6 font-medium text-gray-900">Leichtgewichtiges Verproben</h4>
-                    <p className="mt-2 text-base leading-6 text-gray-500">Mit einem Prototypen können Ideen für neue Applikationen, Produkte oder Features mit Endnutzern verprobt werden. So zeigen sich ohne große Investition Verbesserungspotenziale und es kann bewiesen werden, dass die Idee es wert ist verfolgt zu werden.</p>
+                    <h4 className="text-lg leading-6 font-medium text-gray-900">Hypothesengetriebene Entwicklung</h4>
+                    <p className="mt-2 text-base leading-6 text-gray-500">Bis zu den ersten Umsätzen ist jeder Entwicklungsaufwand eine Wette. Mit den richtigen Fragen verbesserst Du die Quoten zu deinen Gunsten.</p>
                   </div>
                 </div>
               </li>
-              <li className="mt-10 md:mt-0">
+              <li className="mt-10 md:mt-0 mb-8">
                 <div className="flex">
                   <div className="flex-shrink-0">
                     <div className="flex items-center justify-center h-12 w-12 rounded-md bg-tarent-red text-white">
@@ -47,12 +48,12 @@ export default function ValuePropositions() {
                     </div>
                   </div>
                   <div className="ml-4">
-                    <h4 className="text-lg leading-6 font-medium text-gray-900">Beweis, dass die Idee Nutzer begeistert</h4>
-                    <p className="mt-2 text-base leading-6 text-gray-500">Bei Experimenten mit Endnutzern geht es nicht nur darum, dass sie das User Interface verstehen und, dass man tatsächliche Probleme löst, sondern auch darum, dass das interagieren Spaß macht und begeistert.</p>
+                    <h4 className="text-lg leading-6 font-medium text-gray-900">Frühstmögliches Nutzerfeedback</h4>
+                    <p className="mt-2 text-base leading-6 text-gray-500">Ein Launch so früh wie möglich senkt das Risiko, am Markt vorbei zu entwickeln.</p>
                   </div>
                 </div>
               </li>
-              <li className="mt-10 md:mt-0">
+              <li className="mt-10 md:mt-0 mb-8">
                 <div className="flex">
                   <div className="flex-shrink-0">
                     <div className="flex items-center justify-center h-12 w-12 rounded-md bg-tarent-red text-white">
@@ -62,8 +63,8 @@ export default function ValuePropositions() {
                     </div>
                   </div>
                   <div className="ml-4">
-                    <h4 className="text-lg leading-6 font-medium text-gray-900">Verbessern der UX von bestehenden Applikationen</h4>
-                    <p className="mt-2 text-base leading-6 text-gray-500">Prototypen bieten sich nicht nur für neue Produkte und Services an, sondern können auch eine leichtgewichtige Möglichkeit sein, um Ideen für neue Features oder neue Nutzerführungen zu untersuchen und validieren.</p>
+                    <h4 className="text-lg leading-6 font-medium text-gray-900">Validierung ohne Entwicklung</h4>
+                    <p className="mt-2 text-base leading-6 text-gray-500">Mit der richtigen Methodik lässt sich das Investitionsrisiko noch weiter senken.</p>
                   </div>
                 </div>
               </li>

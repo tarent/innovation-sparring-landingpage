@@ -12,6 +12,8 @@ import businessModel from '../public/imgs/profit.png';
 import productMarketFit from '../public/imgs/goal.png';
 import goodies from '../public/imgs/goodies.png';
 
+import signup from '../lib/signup';
+
 const features = [
   {
     name: 'Problem-Solution-Fit',
@@ -283,6 +285,10 @@ const Signup = () => (
 
               <div>
                 <button
+                  onClick={(e) => {
+                    e.preventDefault();
+                    signup();
+                  }}
                   type="submit"
                   className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-tarent-red hover:bg-red-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
                 >

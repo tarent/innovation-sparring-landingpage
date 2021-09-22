@@ -11,6 +11,24 @@ const people = [
     image: '/imgs/timothy-krechel-portrait.jpg',
     bio: 'Timothy hat als Ex-Startup-Gründer vor allem gelernt, wie wichtig das Hinterfragen der eigenen Idee ist. Deshalb liegt sein Fokus auf dem frühstmöglichen Validieren von Annahmen durch echtes Feedback am Markt mittels leichtgewichtiger Prototypen, die den Kernnutzen einer Idee herausstellen.',
   },
+  {
+    name: 'Andrea Lüthje',
+    role: 'Innovation Consultant',
+    image: '/imgs/andrea-lüthje-portrait.jpg',
+    bio: 'Kundenorientierung, Best Practices und erprobte Methoden helfen bei neuen Ideen und Anwendungen in kurzer Zeit einen messbaren Mehrwert zu schaffen.',
+  },
+  {
+    name: 'Corinna Voß',
+    role: 'Innovation Consultant & Agile Coach',
+    image: '/imgs/corinna-voss-portrait.jpg',
+    bio: 'Komplexe Vorhaben spornen Corinna an: Ob es um ambitionierte Ideen für akute Probleme, digitale Transformationen oder den Wandel der Unternehmenskultur geht - sie bringt den richtigen Methodenkoffer mit.',
+  },
+  {
+    name: 'Josua Waghubinger',
+    role: 'Innovation Consultant',
+    image: '/imgs/josua-waghubinger-portrait.jpg',
+    bio: 'Unsere Welt ist komplex genug. Die richtige Methode und Kommunikation zu kennen, hilft, Ordnung zu schaffen - vor allem bei Innovation.',
+  },
 ];
 
 export default function Team() {

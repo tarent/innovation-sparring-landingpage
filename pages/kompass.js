@@ -255,7 +255,7 @@ const Signup = () => {
     setLoading(true);
     e.preventDefault();
     if (!email) return; // if the email field is empty, don't submit the form
-    const { data } = await signup(email.value);
+    const { data } = await signup(email.value, includeFreemail.checked);
     setSuccessMessage(data.inlineMessage);
     setLoading(false);
   };
@@ -311,12 +311,15 @@ const Signup = () => {
                   </p>
                   <div className="flex">
                     <input
-                      id="confirm"
-                      name="confirm"
+                      id="includeFreemail"
+                      name="includeFreemail"
                       type="checkbox"
                       className="mr-2"
                     />
-                    <label htmlFor="confirm" className="text-xs text-gray-400">
+                    <label
+                      htmlFor="includeFreemail"
+                      className="text-xs text-gray-400"
+                    >
                       Ich stimme zu, andere Benachrichtigungen von tarent
                       solutions GmbH zu erhalten.
                     </label>

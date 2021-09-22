@@ -282,7 +282,29 @@ const Signup = () => (
                   />
                 </div>
               </div>
-
+              <p className="text-xs text-gray-400 mt-5">
+                tarent solutions GmbH verpflichtet sich, Ihre Privatsphäre zu
+                schützen und zu respektieren. Wir verwenden Ihre persönlichen
+                Daten nur zur Verwaltung Ihres Kontos und zur Bereitstellung der
+                von Ihnen angeforderten Produkte und Dienstleistungen. Von Zeit
+                zu Zeit möchten wir Sie über unsere Produkte und
+                Dienstleistungen sowie andere Inhalte, die für Sie von Interesse
+                sein könnten, informieren. Wenn Sie damit einverstanden sind,
+                dass wir Sie zu diesem Zweck kontaktieren, geben Sie bitte unten
+                an, wie Sie von uns kontaktiert werden möchten:
+              </p>
+              <div className="flex">
+                <input
+                  id="confirm"
+                  name="confirm"
+                  type="checkbox"
+                  className="mr-2"
+                />
+                <label htmlFor="confirm" className="text-xs text-gray-400">
+                  Ich stimme zu, andere Benachrichtigungen von tarent solutions
+                  GmbH zu erhalten.
+                </label>
+              </div>
               <div>
                 <button
                   onClick={(e) => {
@@ -296,18 +318,14 @@ const Signup = () => (
                 </button>
               </div>
               <p className="text-xs text-gray-400 mt-5">
-                Du wirst im Anschluss zur Downloads-Seite weitergeleitet. Für
-                diesen Newsletter nutzen wir den Service der Firma Hubspot. Die
-                Datenschutzerklärung der Firma Hubspot findest Du{' '}
-                <a
-                  href="https://legal.hubspot.com/de/privacy-policy"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  className="underline hover:text-gray-50"
-                >
-                  hier
-                </a>
-                .
+                Sie können diese Benachrichtigungen jederzeit abbestellen.
+                Weitere Informationen zum Abbestellen, zu unseren
+                Datenschutzverfahren und dazu, wie wir Ihre Privatsphäre
+                schützen und respektieren, finden Sie in unserer
+                Datenschutzrichtlinie. Indem Sie auf &quot;Anmelden&quot;
+                klicken, stimmen Sie zu, dass tarent solutions GmbH die oben
+                angegebenen persönlichen Daten speichert und verarbeitet, um
+                Ihnen die angeforderten Inhalte bereitzustellen.
               </p>
             </form>
           </div>

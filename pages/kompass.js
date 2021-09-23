@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
-import HubspotForm from 'react-hubspot-form';
 
 import Header from '../components/header';
 import Footer from '../components/footer';
@@ -12,9 +11,8 @@ import kompass from '../public/imgs/kompass.png';
 import problemSolutionFit from '../public/imgs/assessment.png';
 import businessModel from '../public/imgs/profit.png';
 import productMarketFit from '../public/imgs/goal.png';
-import goodies from '../public/imgs/goodies.png';
 
-import signup from '../lib/signup';
+import Signup from '../components/signupModal';
 
 const features = [
   {
@@ -50,7 +48,6 @@ export default function Home() {
       <Steps />
       <Testimonial />
       <CTA />
-      <Signup />
       <Team />
       <Footer />
     </main>
@@ -211,96 +208,53 @@ const Feature = ({ icon, name, description }) => (
   </div>
 );
 
-const CTA = () => (
-  <div id="cta" className="bg-tarent-red text-white">
-    <div className="max-w-3xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
-      <p className="text-6xl mb-8">👉</p>
-      <h2 className="text-3xl font-extrabold sm:text-4xl">
-        Dein Schritt in die richtige Richtung
-      </h2>
-      <p className="mt-4 text-lg leading-6">
-        In einer 30-minütigen kostenlosen Session gehen wir gemeinsam durch dein
-        Projekt und Du erhältst von uns im Nachgang kurze Handlungsempfehlungen
-        für die nächsten Schritte &mdash; no strings attached!
-      </p>
-      <a
-        href="https://meetings.hubspot.com/frederik-vosberg/innovation-sparring"
-        className="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md bg-white hover:bg-red-50 text-tarent-black"
-      >
-        Vereinbare Dein 30-minütiges Probe-Sparring
-      </a>
-      <p className="text-xs text-red-200 mt-5">
-        Du hast die Möglichkeit, dir über diesen Weg einen freien Kontakttermin
-        im Kalender eines tarent-Ansprechpartners zu buchen. Für diese Funktion
-        nutzen wir den Service der Firma Hubspot. Die Datenschutzerklärung der
-        Firma Hubspot findest Du{' '}
-        <a
-          href="https://legal.hubspot.com/de/privacy-policy"
-          target="_blank"
-          rel="noreferrer noopener"
-          className="underline hover:text-gray-50"
-        >
-          hier
-        </a>
-        .
-      </p>
-    </div>
-  </div>
-);
-
-const Signup = () => {
-  const [loading, setLoading] = useState(false);
-  const [successMessage, setSuccessMessage] = useState();
+const CTA = () => {
+  const [open, setOpen] = useState(false);
 
   return (
-    <div className="bg-gray-50 flex justify-center flex-wrap py-24">
-      <div className="min-w-full lg:min-w-0 flex-1 flex flex-col justify-center py-12 px-4 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
-        <div className="mx-auto w-full max-w-sm lg:w-96">
-          <div>
-            <p className="text-6xl">👟</p>
-            <h2 className="mt-6 text-3xl font-extrabold text-gray-900">
-              Du willst schon vorpreschen?
-            </h2>
-            <p className="mt-2 text-sm text-gray-600">
-              Dann hol&apos; Dir Dein kostenloses Worksheet oder Miro-Template,
-              indem Du dich für unseren Newsletter anmeldest.
-            </p>
-          </div>
-
-          <div className="mt-8">
-            <div className="mt-6">
-              <HubspotForm
-                portalId="2420272"
-                formId="d363a491-ae14-4cb8-ba00-508988c81c02"
-                onSubmit={() => {
-                  setLoading(true);
-                }}
-                onFormSubmitted={() => {
-                  setLoading(false);
-                }}
-                loading={<div>Loading...</div>}
-              />
-              {successMessage && (
-                <div className="rounded-md bg-green-50 p-4 border border-green-700">
-                  <div className="flex">
-                    <div className="flex-shrink-0">
-                      {/* <XCircleIcon className="h-5 w-5 text-red-400" aria-hidden="true" /> */}
-                    </div>
-                    <div className="ml-3">
-                      <h3 className="text-sm font-medium text-green-800">
-                        {successMessage}
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-              )}
-            </div>
-          </div>
+    <div id="cta" className="bg-tarent-red text-white">
+      <div className="max-w-3xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
+        <p className="text-6xl mb-8">👉</p>
+        <h2 className="text-3xl font-extrabold sm:text-4xl">
+          Dein Schritt in die richtige Richtung
+        </h2>
+        <p className="mt-4 text-lg leading-6">
+          In einer 30-minütigen kostenlosen Session gehen wir gemeinsam durch
+          dein Projekt und Du erhältst von uns im Nachgang kurze
+          Handlungsempfehlungen für die nächsten Schritte &mdash; no strings
+          attached!
+        </p>
+        <div className="w-full flex mt-8">
+          <a
+            href="https://meetings.hubspot.com/frederik-vosberg/innovation-sparring"
+            className="flex-grow inline-flex items-center justify-center px-5 py-3 mx-1 border border-transparent text-base font-medium rounded-md bg-white hover:bg-red-50 text-tarent-black"
+          >
+            Vereinbare Dein 30-minütiges Probe-Sparring
+          </a>
+          <button
+            onClick={() => setOpen(true)}
+            className="flex-1 w-full inline-flex items-center justify-center px-5 py-3 mx-1 border border-transparent text-base font-medium rounded-md bg-red-800 hover:bg-red-700 text-white"
+          >
+            Mehr Infos bekommen!
+          </button>
         </div>
+        <p className="text-xs text-red-200 mt-5">
+          Du hast die Möglichkeit, dir über diesen Weg einen freien
+          Kontakttermin im Kalender eines tarent-Ansprechpartners zu buchen. Für
+          diese Funktion nutzen wir den Service der Firma Hubspot. Die
+          Datenschutzerklärung der Firma Hubspot findest Du{' '}
+          <a
+            href="https://legal.hubspot.com/de/privacy-policy"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="underline hover:text-gray-50"
+          >
+            hier
+          </a>
+          .
+        </p>
       </div>
-      <div className="flex max-w-lg flex-1 justify-center items-center">
-        <Image src={goodies} alt="" height={200} width={200} />
-      </div>
+      <Signup open={open} setOpen={setOpen} />
     </div>
   );
 };

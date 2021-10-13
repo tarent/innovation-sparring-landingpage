@@ -14,6 +14,8 @@ import productMarketFit from '../public/imgs/goal.png';
 
 import Signup from '../components/signupModal';
 
+import goodies from '../public/imgs/goodies.png';
+
 const features = [
   {
     name: 'Problem-Solution-Fit',
@@ -218,25 +220,44 @@ const CTA = () => {
         <h2 className="text-3xl font-extrabold sm:text-4xl">
           Dein Schritt in die richtige Richtung
         </h2>
-        <p className="mt-4 text-lg leading-6">
-          In einer 30-minütigen kostenlosen Session gehen wir gemeinsam durch
-          dein Projekt und Du erhältst von uns im Nachgang kurze
-          Handlungsempfehlungen für die nächsten Schritte &mdash; no strings
-          attached!
-        </p>
-        <div className="w-full flex mt-8">
-          <a
-            href="https://meetings.hubspot.com/frederik-vosberg/innovation-sparring"
-            className="flex-grow inline-flex items-center justify-center px-5 py-3 mx-1 border border-transparent text-base font-medium rounded-md bg-white hover:bg-red-50 text-tarent-black"
-          >
-            Vereinbare Dein 30-minütiges Probe-Sparring
-          </a>
-          <button
-            onClick={() => setOpen(true)}
-            className="flex-1 w-full inline-flex items-center justify-center px-5 py-3 mx-1 border border-transparent text-base font-medium rounded-md bg-red-800 hover:bg-red-700 text-white"
-          >
-            Mehr Infos bekommen!
-          </button>
+        <div className="w-full flex gap-x-4 mt-8">
+          <div className="w-full md:w-1/2 flex flex-col h-96 justify-between">
+            <p className="text-lg leading-6">
+              In einer 30-minütigen kostenlosen Session gehen wir gemeinsam
+              durch dein Projekt und Du erhältst von uns im Nachgang kurze
+              Handlungsempfehlungen für die nächsten Schritte &mdash; no strings
+              attached!
+            </p>
+            <a
+              href="https://meetings.hubspot.com/frederik-vosberg/innovation-sparring"
+              className="w-full h-20 inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md bg-white hover:bg-red-50 text-tarent-black"
+            >
+              Vereinbare Dein
+              <br /> 30-minütiges Probe-Sparring
+            </a>
+          </div>
+          <div className="w-full md:w-1/2 flex flex-col h-96 justify-between">
+            <p className="text-lg leading-6">
+              Wenn Du stattdessen direkt selber loslegen möchtest, kannst Du den
+              Innovationskompass auch als Worksheet und Miro-Template abstauben.
+              Melde Dich einfach für unseren Newsletter an.
+            </p>
+            <div>
+              <Image
+                src={goodies}
+                aria-hidden="true"
+                height={160}
+                width={160}
+                alt="miro und pdf Worksheet"
+              />
+            </div>
+            <button
+              onClick={() => setOpen(true)}
+              className="flex-0 h-20 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md bg-red-800 hover:bg-red-700 text-white"
+            >
+              Goodies abstauben!
+            </button>
+          </div>
         </div>
         <p className="text-xs text-red-200 mt-5">
           Du hast die Möglichkeit, dir über diesen Weg einen freien

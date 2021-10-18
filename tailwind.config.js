@@ -1,4 +1,4 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   mode: 'jit',
@@ -6,6 +6,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      height: (theme) => ({
+        'screen-9/10': '90vh',
+      }),
       colors: {
         tarent: {
           red: '#cc0000',
@@ -14,12 +17,10 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: [ '"Ubuntu"', ...defaultTheme.fontFamily.sans ],
-      }
+        sans: ['"Ubuntu"', ...defaultTheme.fontFamily.sans],
+      },
     },
   },
-  variants: {},
-  plugins: [
-    require('@tailwindcss/aspect-ratio'),
-  ],
-}
+  variants: { display: ['responsive', 'hover', 'focus'] },
+  plugins: [require('@tailwindcss/aspect-ratio')],
+};

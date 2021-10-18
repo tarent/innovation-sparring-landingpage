@@ -7,17 +7,18 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import Footer from '../components/footer';
 
 import logo from '../public/imgs/logo.svg';
+import logoWhite from '../public/imgs/logo-white.svg';
 import step1 from '../public/imgs/step-1.png';
 import step2 from '../public/imgs/step-2.png';
 import step3 from '../public/imgs/step-3.png';
 
 const navigation = [
   {
-    name: 'Unser Ansatz',
+    name: "So geht's",
     href: '#solution',
   },
   {
-    name: 'Deine Sparring Session',
+    name: 'Expertengespräch buchen',
     href: '#cta',
   },
 ];
@@ -41,23 +42,23 @@ export default function TheRightIt() {
 function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 h-24 z-10">
-      <Popover className="relative bg-white">
+      <Popover className="relative bg-tarent-red">
         <div className="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
           <div className="flex justify-start items-center lg:w-0 lg:flex-1">
             <a href="#">
-              <span className="sr-only">Workflow</span>
+              <span className="sr-only">tarent Innovation Consulting</span>
               <div className="h-8 w-auto sm:h-10">
-                <Image src={logo} alt="" height={40} width={40} />
+                <Image src={logoWhite} alt="" height={40} width={40} />
               </div>
             </a>
-            <h1 className="text-lg ml-2 text-gray-800">
+            <h1 className="text-lg ml-2 text-white">
               <span>tarent </span>
               <span className="text-lg font-medium">Innovation Consulting</span>
             </h1>
           </div>
           <div className="-mr-2 -my-2 md:hidden">
             <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-500">
-              <span className="sr-only">Open menu</span>
+              <span className="sr-only">Menü öffnen</span>
               <MenuIcon className="h-6 w-6" aria-hidden="true" />
             </Popover.Button>
           </div>
@@ -66,7 +67,7 @@ function Header() {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-base font-medium text-gray-500 hover:text-gray-900"
+                className="text-base font-medium text-red-300 hover:text-red-100"
               >
                 {item.name}
               </a>
@@ -132,22 +133,28 @@ function Header() {
 function Hero() {
   return (
     <div>
-      <div className="relative bg-tarent-red h-screen flex flex-col justify-center">
+      <div className="relative bg-tarent-red h-screen-9/10 flex flex-col justify-center">
         <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
           <div className="relative">
             <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
-              <h1 className="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+              <h1 className="text-center text-5xl font-extrabold tracking-tight sm:text-6xl lg:text-7xl">
                 <span className="block text-white">Zahlende Nutzer</span>
                 <span className="block text-red-200">Von Tag 1 an.</span>
               </h1>
               <p className="mt-6 max-w-lg mx-auto text-center text-xl text-red-200 sm:max-w-3xl">
-                Wir helfen Dir, die Erfolgschancen deiner Software drastisch zu
-                verbessern.
+                Deine Idee verdient es, erfolgreich zu sein. Lass&apos; uns
+                darüber sprechen, wie wir schnell dorthin kommen!
               </p>
-              <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
+              <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center gap-4">
+                <a
+                  href="https://meetings.hubspot.com/frederik-vosberg/innovation-sparring"
+                  className="mb-2 flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-red-700 bg-white hover:bg-red-50 sm:px-8"
+                >
+                  Jetzt Expertengespräch buchen
+                </a>
                 <a
                   href="#solution"
-                  className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-red-700 bg-white hover:bg-red-50 sm:px-8"
+                  className="mb-2 flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-red-600 hover:bg-red-50 sm:px-8"
                 >
                   So geht&apos;s
                 </a>
@@ -280,7 +287,7 @@ function Reasons() {
     <div className="bg-white" id="solution">
       <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
         <div className="text-center mb-8">
-          <h2 className="text-base font-semibold text-red-600 tracking-wide uppercase">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-red-600 tracking-wide uppercase">
             Du glaubst Daran,
           </h2>
           <p className="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
@@ -291,7 +298,7 @@ function Reasons() {
             Innovationen scheitern, ist eine Idee ein riskantes Vorhaben.
           </p>
           <h2 className="mt-4 text-base font-semibold text-red-600 tracking-wide uppercase">
-            Lass uns das Risiko Deiner Idee verringern, indem wir ...
+            Lass&apos; uns die Chancen deiner Idee erhöhen, indem wir ...
           </h2>
         </div>
         <ul
@@ -336,14 +343,15 @@ function CTA() {
           </span>
         </h2>
         <p className="mt-4 text-lg leading-6 text-red-200">
-          Wir teilen unsere einzigartigen Erfahrungen als Ex-Startup-Gründer,
-          damit Du nicht die gleichen Fehler machen musst.
+          In einem 30-minütigen Expertengespräch teilen wir unsere einzigartigen
+          Erfahrungen als Ex-Startup-Gründer und erarbeiten mit dir Deine
+          <span className="font-bold text-white"> Roadmap zu Kunde #1</span>.
         </p>
         <a
           href="https://meetings.hubspot.com/frederik-vosberg/innovation-sparring"
           className="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-red-600 bg-white hover:bg-indigo-50 sm:w-auto"
         >
-          30-minütiges Probe-Sparring vereinbaren
+          Kostenloses Expertengespräch vereinbaren
         </a>
         <p className="text-xs text-red-200 mt-5">
           Du hast die Möglichkeit, dir über diesen Weg einen freien
@@ -415,7 +423,7 @@ function Team() {
             <p className="text-xl text-gray-500">
               Schnell messbare Ergebnisse zu liefern, Intrapreneurship und
               Innovation zu treiben sowie ressourcenschonend zu Erkenntnissen zu
-              kommen treibt uns an.
+              kommen, treibt uns an.
             </p>
           </div>
           <div className="lg:col-span-2">

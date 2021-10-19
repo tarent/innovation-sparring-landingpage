@@ -153,6 +153,7 @@ function Hero() {
               <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center gap-4">
                 <a
                   href="https://meetings.hubspot.com/frederik-vosberg/innovation-sparring"
+                  id="hero-cta"
                   className="mb-2 flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-red-700 bg-white hover:bg-red-50 sm:px-8"
                 >
                   Jetzt Expertengespräch buchen
@@ -353,6 +354,7 @@ function CTA() {
           <span className="font-bold text-white"> Roadmap zu Kunde #1</span>.
         </p>
         <a
+          id="cta-cta"
           href="https://meetings.hubspot.com/frederik-vosberg/innovation-sparring"
           className="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-red-600 bg-white hover:bg-indigo-50 sm:w-auto"
         >

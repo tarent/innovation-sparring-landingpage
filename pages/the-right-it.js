@@ -1,5 +1,5 @@
-/* This example requires Tailwind CSS v2.0+ */
 import { Fragment } from 'react';
+import Head from 'next/head';
 import Image from 'next/image';
 import { Popover, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
@@ -26,6 +26,10 @@ const navigation = [
 export default function TheRightIt() {
   return (
     <div className="min-h-screen bg-white">
+      <Head>
+        <title>Build The Right It | tarent Innovation Consulting</title>
+        <link rel="icon" sizes="32x32" href="/imgs/tarent-thumb-32x32.png" />
+      </Head>
       <main>
         <Header />
         <Hero />

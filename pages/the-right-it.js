@@ -142,8 +142,9 @@ function Hero() {
                 <span className="block text-red-200">Von Tag 1 an.</span>
               </h1>
               <p className="mt-6 max-w-lg mx-auto text-center text-xl text-red-200 sm:max-w-3xl">
-                Deine Idee verdient es, erfolgreich zu sein. Lass&apos; uns
-                darüber sprechen, wie wir schnell dorthin kommen!
+                Deine Idee verdient es, erfolgreich zu sein.
+                <br /> Lass&apos; uns darüber sprechen, wie wir schnell dorthin
+                kommen!
               </p>
               <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center gap-4">
                 <a

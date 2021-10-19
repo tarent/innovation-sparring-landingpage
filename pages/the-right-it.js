@@ -136,7 +136,7 @@ function Header() {
 
 function Hero() {
   return (
-    <div>
+    <section id="hero">
       <div className="relative bg-tarent-red h-screen-9/10 flex flex-col justify-center">
         <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
           <div className="relative">
@@ -169,13 +169,13 @@ function Hero() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
 function Logos() {
   return (
-    <div className="bg-red-600">
+    <section id="logos" className="bg-red-600">
       <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
         <p className="text-center text-sm font-semibold uppercase text-red-700 tracking-wide">
           Innovationstreiber bei
@@ -269,7 +269,7 @@ function Logos() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
@@ -290,7 +290,7 @@ const reasons = [
 
 function Reasons() {
   return (
-    <div className="bg-white" id="solution">
+    <section className="bg-white" id="solution">
       <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
         <div className="text-center mb-8">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-red-600 tracking-wide uppercase">
@@ -333,13 +333,13 @@ function Reasons() {
           ))}
         </ul>
       </div>
-    </div>
+    </section>
   );
 }
 
 function CTA() {
   return (
-    <div className="bg-tarent-red" id="cta">
+    <section className="bg-tarent-red" id="cta">
       <div className="max-w-3xl mx-auto text-center py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
           <span className="block">Bezahlende Nutzer von Tag 1 an,</span>
@@ -376,7 +376,7 @@ function CTA() {
           .
         </p>
       </div>
-    </div>
+    </section>
   );
 }
 
@@ -420,7 +420,7 @@ const people = [
 
 function Team() {
   return (
-    <div className="bg-white">
+    <section id="team" className="bg-white">
       <div className="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
         <div className="space-y-12 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
           <div className="space-y-5 sm:space-y-4">
@@ -488,6 +488,6 @@ function Team() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

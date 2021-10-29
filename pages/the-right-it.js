@@ -110,7 +110,7 @@ function Brands() {
 
 const challenges = [
   {
-    title: 'Discovery',
+    title: 'Ideen finden',
     problem: 'Welche Ideen bringen unsere Strategie vorwärts?',
     solution:
       'Inspirierende Workshops fördern die besten Ideen deiner Organisation zutage.',

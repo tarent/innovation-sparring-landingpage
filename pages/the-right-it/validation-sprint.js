@@ -7,7 +7,7 @@ import SuccessStories from '../../components/the-right-it/success-stories';
 import CTA from '../../components/the-right-it/cta';
 import Footer from '../../components/footer';
 
-import step1 from '../../public/imgs/step-1.png';
+import step2 from '../../public/imgs/step-2.png';
 
 export default function TheRightIt() {
   return (
@@ -78,10 +78,10 @@ function Content() {
         <div className="py-12">
           <h1>
             <span className="block text-base text-center text-tarent-red font-semibold tracking-wide uppercase">
-              Nostrud velit excepteur mit dem
+              Früh eigene Daten mit dem
             </span>
             <span className="mt-2 block text-5xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-6xl">
-              Ideensprint
+              Validation Sprint
             </span>
           </h1>
         </div>
@@ -92,7 +92,7 @@ function Content() {
                 <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
                   <Image
                     className="rounded-lg shadow-lg object-contain object-center"
-                    src={step1}
+                    src={step2}
                     alt="Whitney leaning against a railing on a downtown street"
                   />
                 </div>
@@ -101,62 +101,49 @@ function Content() {
           </div>
           <div className="mt-8 lg:mt-0">
             <div className="mt-6 prose prose-red prose-lg text-gray-500 pb-8">
-              <h2>
-                Kunden- und Nutzerbedürfnisse verstehen, daraus Ideen generieren
-                und testen.
-              </h2>
+              <h2>Data Beats Opinions. Period.</h2>
             </div>
             <div className="text-base max-w-prose mx-auto lg:max-w-none">
               <p className="text-lg text-gray-500">
-                Sagittis scelerisque nulla cursus in enim consectetur quam.
-                Dictum urna sed consectetur neque tristique pellentesque.
-                Blandit amet, sed aenean erat arcu morbi.
+                In unserem Validation Sprint setzen wir gemeinsam Experimente
+                auf, mit denen wir in kürzestmöglicher Zeit und bei
+                geringstmöglichem Invest eigene Daten zur Nachfrage am Markt
+                generieren. So schaffen wir Beweise, dass Deine Idee
+                funktioniert.
               </p>
             </div>
             <div className="mt-5 prose prose-red text-gray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
               <p>
-                Sollicitudin tristique eros erat odio sed vitae, consequat
-                turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros
-                eu viverra donec ut volutpat donec laoreet quam urna.
-              </p>
-              <p>
-                Bibendum eu nulla feugiat justo, elit adipiscing. Ut tristique
-                sit nisi lorem pulvinar. Urna, laoreet fusce nibh leo. Dictum et
-                et et sit. Faucibus sed non gravida lectus dignissim imperdiet
-                a.
-              </p>
-              <p>
-                Dictum magnis risus phasellus vitae quam morbi. Quis lorem lorem
-                arcu, metus, egestas netus cursus. In.
+                Unsere Workshops können remote oder vor Ort stattfinden. Wir
+                richten uns ganz nach Dir.
               </p>
               <h3>Das ist für Dich drin</h3>
               <ul role="list">
-                <li>Quis elit egestas venenatis mattis dignissim.</li>
                 <li>
-                  Cras cras lobortis vitae vivamus ultricies facilisis tempus.
+                  3 Ein-Tages-Workshops, in denen wir Dich bei Deinen Tests
+                  begleiten.
                 </li>
-                <li>Orci in sit morbi dignissim metus diam arcu pretium.</li>
+                <li>
+                  3 Experimentalreihen, in denen Du systematisch Nachfrage
+                  testest.
+                </li>
+                <li>Aussagekräftige Daten nach nur 3 Wochen.</li>
+                <li>
+                  Die ideale Entscheidungsgrundlage für das weitere Vorgehen.
+                </li>
               </ul>
-              <p>
-                Rhoncus nisl, libero egestas diam fermentum dui. At quis
-                tincidunt vel ultricies. Vulputate aliquet velit faucibus
-                semper. Pellentesque in venenatis vestibulum consectetur nibh
-                id. In id ut tempus egestas. Enim sit aliquam nec, a. Morbi enim
-                fermentum lacus in. Viverra.
-              </p>
               <h3>Das bringst Du mit</h3>
               <ul role="list">
-                <li>Quis elit egestas venenatis mattis dignissim.</li>
+                <li>Deine Idee, idealerweise auf einem Lean Canvas.</li>
                 <li>
-                  Cras cras lobortis vitae vivamus ultricies facilisis tempus.
+                  3 Wochen lang einen festen Workshop-Tag in der Woche für alle
+                  Beteiligten.
                 </li>
-                <li>Orci in sit morbi dignissim metus diam arcu pretium.</li>
+                <li>
+                  Kapazitäten und Budget für Interviews und Ads über einen
+                  Zeitraum von 3 Wochen.
+                </li>
               </ul>
-              <p>
-                Sagittis scelerisque nulla cursus in enim consectetur quam.
-                Dictum urna sed consectetur neque tristique pellentesque.
-                Blandit amet, sed aenean erat arcu morbi.
-              </p>
             </div>
             <div className="mt-10 flex text-base max-w-prose mx-auto lg:max-w-none">
               <div className="rounded-md shadow">

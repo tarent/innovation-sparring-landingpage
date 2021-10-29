@@ -8,7 +8,7 @@ import logoWhite from '../../public/imgs/logo-white.svg';
 
 const navigation = [
   {
-    name: 'Sprich uns an',
+    name: 'Jetzt Termin ausmachen',
     href: '#cta',
   },
 ];
@@ -19,7 +19,7 @@ export default function Header() {
       <Popover className="relative bg-tarent-red">
         <div className="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
           <div className="flex justify-start items-center lg:w-0 lg:flex-1">
-            <a href="#">
+            <a href="/">
               <span className="sr-only">tarent Innovation Consulting</span>
               <div className="h-8 w-auto sm:h-10">
                 <Image src={logoWhite} alt="" height={40} width={40} />

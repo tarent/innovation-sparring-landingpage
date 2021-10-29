@@ -78,7 +78,7 @@ function Content() {
         <div className="py-12">
           <h1>
             <span className="block text-base text-center text-tarent-red font-semibold tracking-wide uppercase">
-              Den Grundstein legen mit dem
+              Nostrud velit excepteur mit dem
             </span>
             <span className="mt-2 block text-5xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-6xl">
               Ideensprint
@@ -108,32 +108,55 @@ function Content() {
             </div>
             <div className="text-base max-w-prose mx-auto lg:max-w-none">
               <p className="text-lg text-gray-500">
-                In unserem Ideen-Sprint versetzen wir uns in den Zielkunden
-                hinein, erarbeiten seine Probleme und Bedürfnisse und entwickeln
-                gezielt passende und greifbare Ideen.
+                Sagittis scelerisque nulla cursus in enim consectetur quam.
+                Dictum urna sed consectetur neque tristique pellentesque.
+                Blandit amet, sed aenean erat arcu morbi.
               </p>
             </div>
             <div className="mt-5 prose prose-red text-gray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
               <p>
-                Unsere Workshops können remote oder vor Ort stattfinden. Wir
-                richten uns ganz nach Dir.
+                Sollicitudin tristique eros erat odio sed vitae, consequat
+                turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros
+                eu viverra donec ut volutpat donec laoreet quam urna.
+              </p>
+              <p>
+                Bibendum eu nulla feugiat justo, elit adipiscing. Ut tristique
+                sit nisi lorem pulvinar. Urna, laoreet fusce nibh leo. Dictum et
+                et et sit. Faucibus sed non gravida lectus dignissim imperdiet
+                a.
+              </p>
+              <p>
+                Dictum magnis risus phasellus vitae quam morbi. Quis lorem lorem
+                arcu, metus, egestas netus cursus. In.
               </p>
               <h3>Das ist für Dich drin</h3>
               <ul role="list">
-                <li>2-tägiger Workshop.</li>
+                <li>Quis elit egestas venenatis mattis dignissim.</li>
                 <li>
-                  Umfangreicher Methodenkoffer, um die besten Ideen
-                  hervorzubringen.
+                  Cras cras lobortis vitae vivamus ultricies facilisis tempus.
                 </li>
-                <li>Ausarbeitung des Geschäftsmodells</li>
-                <li>Identifikation der wichtigsten Annahmen</li>
+                <li>Orci in sit morbi dignissim metus diam arcu pretium.</li>
               </ul>
+              <p>
+                Rhoncus nisl, libero egestas diam fermentum dui. At quis
+                tincidunt vel ultricies. Vulputate aliquet velit faucibus
+                semper. Pellentesque in venenatis vestibulum consectetur nibh
+                id. In id ut tempus egestas. Enim sit aliquam nec, a. Morbi enim
+                fermentum lacus in. Viverra.
+              </p>
               <h3>Das bringst Du mit</h3>
               <ul role="list">
-                <li>Ein Strategiefeld, auf dem Du Dich bewegen möchtest.</li>
-                <li>Dein Zielkundenprofil, im besten Fall als Persona.</li>
-                <li>2 Tage ungestörte Zeit.</li>
+                <li>Quis elit egestas venenatis mattis dignissim.</li>
+                <li>
+                  Cras cras lobortis vitae vivamus ultricies facilisis tempus.
+                </li>
+                <li>Orci in sit morbi dignissim metus diam arcu pretium.</li>
               </ul>
+              <p>
+                Sagittis scelerisque nulla cursus in enim consectetur quam.
+                Dictum urna sed consectetur neque tristique pellentesque.
+                Blandit amet, sed aenean erat arcu morbi.
+              </p>
             </div>
             <div className="mt-10 flex text-base max-w-prose mx-auto lg:max-w-none">
               <div className="rounded-md shadow">

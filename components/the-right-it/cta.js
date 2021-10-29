@@ -10,9 +10,13 @@ export default function CTA() {
           </span>
         </h2>
         <p className="mt-4 text-lg leading-6 text-red-200">
-          In einem 30-minütigen Expertengespräch teilen wir unsere einzigartigen
-          Erfahrungen als Ex-Startup-Gründer und erarbeiten mit dir Deine
-          <span className="font-bold text-white"> Roadmap zu Kunde #1</span>.
+          In einem 30-minütigen Gespräch erarbeiten wir mit dir
+          <br /> Deine
+          <span className="font-bold text-white">
+            {' '}
+            Roadmap zum Produkterfolg
+          </span>
+          .
         </p>
         <a
           id="cta-cta"
@@ -21,7 +25,7 @@ export default function CTA() {
           rel="noreferrer"
           className="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-red-600 bg-white hover:bg-indigo-50 sm:w-auto"
         >
-          Kostenloses Expertengespräch vereinbaren
+          Jetzt Termin ausmachen
         </a>
         <p className="text-xs text-red-200 mt-5">
           Du hast die Möglichkeit, dir über diesen Weg einen freien

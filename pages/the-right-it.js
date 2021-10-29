@@ -13,6 +13,10 @@ import step3 from '../public/imgs/step-3.png';
 import step4 from '../public/imgs/step-3.png';
 import vorgehen from '../public/imgs/vorgehen.png';
 
+import stabilo from '../public/imgs/stabilo-white.svg';
+import smive from '../public/imgs/smive-white.svg';
+import itenos from '../public/imgs/itenos-white.svg';
+
 export default function TheRightIt() {
   return (
     <div className="min-h-screen bg-white">
@@ -48,8 +52,7 @@ function Hero() {
               </h1>
               <p className="mt-6 max-w-lg mx-auto text-center text-xl text-red-200 sm:max-w-3xl">
                 Deine Idee verdient es, erfolgreich zu sein.
-                <br /> Lass&apos; uns darüber sprechen, wie wir schnell dorthin
-                kommen!
+                <br /> Lass&apos; uns den Weg in Rekordzeit gehen.
               </p>
               <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center gap-4">
                 <a
@@ -59,7 +62,7 @@ function Hero() {
                   id="hero-cta"
                   className="mb-2 flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-red-700 bg-white hover:bg-red-50 sm:px-8"
                 >
-                  Jetzt Expertengespräch buchen
+                  Jetzt Termin ausmachen
                 </a>
                 <a
                   href="#solution"
@@ -83,18 +86,21 @@ function Brands() {
         <p className="text-center text-sm font-semibold uppercase text-red-700 tracking-wide">
           Ausgewählte Referenzen
         </p>
-        <div className="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-4">
+        <div className="mt-6 grid grid-cols-3 gap-8">
           <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-            <div className="w-40">xyz</div>
+            <div className="w-40">
+              <img src={stabilo.src} />
+            </div>
           </div>
           <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-            <div className="w-20">xyz</div>
+            <div className="w-40">
+              <img src={smive.src} />
+            </div>
           </div>
           <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-            <div className="w-32">xyz</div>
-          </div>
-          <div className="col-span-1 flex justify-center md:col-span-2 md:col-start-2 lg:col-span-1">
-            <div className="w-40">xyz</div>
+            <div className="w-40">
+              <img src={itenos.src} />
+            </div>
           </div>
         </div>
       </div>
@@ -172,7 +178,8 @@ function Solution() {
           </p>
           <p className="max-w-xl mt-5 mx-auto text-xl text-gray-500">
             Monate oder Jahre an Software zu tüfteln, die am Ende niemanden
-            interessiert, ist Zeitverschwendung.
+            interessiert, ist Zeitverschwendung. Deswegen ist dein erfolgreiches
+            Produkt unsere Mission.
           </p>
         </div>
         <ul

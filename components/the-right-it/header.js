@@ -8,11 +8,7 @@ import logoWhite from '../../public/imgs/logo-white.svg';
 
 const navigation = [
   {
-    name: "So geht's",
-    href: '#solution',
-  },
-  {
-    name: 'Expertengespräch buchen',
+    name: 'Sprich uns an',
     href: '#cta',
   },
 ];

@@ -7,13 +7,13 @@ import SuccessStories from '../../components/the-right-it/success-stories';
 import CTA from '../../components/the-right-it/cta';
 import Footer from '../../components/footer';
 
-import step1 from '../../public/imgs/step-1.png';
+import step3 from '../../public/imgs/step-3.png';
 
 export default function TheRightIt() {
   return (
     <div className="min-h-screen bg-white">
       <Head>
-        <title>Ideen-Sprint | tarent Innovation Consulting</title>
+        <title>Build Sprint | tarent Innovation Consulting</title>
         <link rel="icon" sizes="32x32" href="/imgs/tarent-thumb-32x32.png" />
       </Head>
       <Header />
@@ -50,7 +50,7 @@ function Content() {
                 <li>
                   <div className="flex">
                     <a
-                      href="#"
+                      href="/"
                       className="text-sm font-medium text-gray-500 hover:text-gray-700"
                     >
                       Building The Right It
@@ -63,12 +63,9 @@ function Content() {
                       className="flex-shrink-0 h-5 w-5 text-gray-400"
                       aria-hidden="true"
                     />
-                    <a
-                      href="#"
-                      className="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700"
-                    >
-                      Ideen-Sprint
-                    </a>
+                    <div className="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700">
+                      Build Sprint
+                    </div>
                   </div>
                 </li>
               </ol>
@@ -78,10 +75,10 @@ function Content() {
         <div className="py-12">
           <h1>
             <span className="block text-base text-center text-tarent-red font-semibold tracking-wide uppercase">
-              Nostrud velit excepteur mit dem
+              In 4 Wochen am Markt mit dem
             </span>
             <span className="mt-2 block text-5xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-6xl">
-              Ideensprint
+              Build Sprint
             </span>
           </h1>
         </div>
@@ -92,7 +89,7 @@ function Content() {
                 <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
                   <Image
                     className="rounded-lg shadow-lg object-contain object-center"
-                    src={step1}
+                    src={step3}
                     alt="Whitney leaning against a railing on a downtown street"
                   />
                 </div>
@@ -101,67 +98,36 @@ function Content() {
           </div>
           <div className="mt-8 lg:mt-0">
             <div className="mt-6 prose prose-red prose-lg text-gray-500 pb-8">
-              <h2>
-                Kunden- und Nutzerbedürfnisse verstehen, daraus Ideen generieren
-                und testen.
-              </h2>
+              <h2>&quot;Build, Measure, Learn&quot; auf Koks.</h2>
             </div>
             <div className="text-base max-w-prose mx-auto lg:max-w-none">
               <p className="text-lg text-gray-500">
-                Sagittis scelerisque nulla cursus in enim consectetur quam.
-                Dictum urna sed consectetur neque tristique pellentesque.
-                Blandit amet, sed aenean erat arcu morbi.
+                In unserem Build Sprint entwickeln wir Dein MVP innerhalb von 2
+                Sprints über 4 Wochen.
               </p>
             </div>
             <div className="mt-5 prose prose-red text-gray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
-              <p>
-                Sollicitudin tristique eros erat odio sed vitae, consequat
-                turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros
-                eu viverra donec ut volutpat donec laoreet quam urna.
-              </p>
-              <p>
-                Bibendum eu nulla feugiat justo, elit adipiscing. Ut tristique
-                sit nisi lorem pulvinar. Urna, laoreet fusce nibh leo. Dictum et
-                et et sit. Faucibus sed non gravida lectus dignissim imperdiet
-                a.
-              </p>
-              <p>
-                Dictum magnis risus phasellus vitae quam morbi. Quis lorem lorem
-                arcu, metus, egestas netus cursus. In.
-              </p>
               <h3>Das ist für Dich drin</h3>
               <ul role="list">
-                <li>Quis elit egestas venenatis mattis dignissim.</li>
-                <li>
-                  Cras cras lobortis vitae vivamus ultricies facilisis tempus.
-                </li>
-                <li>Orci in sit morbi dignissim metus diam arcu pretium.</li>
+                <li>Fokus auf den werthaltigsten Teil Deiner Idee.</li>
+                <li>Nach zwei 2-wöchigen Sprints launchen wir Dein MVP.</li>
+                <li>Aussagekräftige Analytics für laufende Erkenntnisse.</li>
+                <li>Unschlagbare Time-to-Market.</li>
               </ul>
-              <p>
-                Rhoncus nisl, libero egestas diam fermentum dui. At quis
-                tincidunt vel ultricies. Vulputate aliquet velit faucibus
-                semper. Pellentesque in venenatis vestibulum consectetur nibh
-                id. In id ut tempus egestas. Enim sit aliquam nec, a. Morbi enim
-                fermentum lacus in. Viverra.
-              </p>
               <h3>Das bringst Du mit</h3>
               <ul role="list">
-                <li>Quis elit egestas venenatis mattis dignissim.</li>
+                <li>Deine validierte Idee.</li>
+                <li>Ein klares.</li>
                 <li>
-                  Cras cras lobortis vitae vivamus ultricies facilisis tempus.
+                  2 Tage Zeit in 4 Wochen für Reviews, Learnings und
+                  Anpassungen.
                 </li>
-                <li>Orci in sit morbi dignissim metus diam arcu pretium.</li>
               </ul>
-              <p>
-                Sagittis scelerisque nulla cursus in enim consectetur quam.
-                Dictum urna sed consectetur neque tristique pellentesque.
-                Blandit amet, sed aenean erat arcu morbi.
-              </p>
             </div>
             <div className="mt-10 flex text-base max-w-prose mx-auto lg:max-w-none">
               <div className="rounded-md shadow">
                 <a
-                  href="#"
+                  href="#cta"
                   className="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-tarent-red hover:bg-red-700"
                 >
                   Kontaktiere Uns

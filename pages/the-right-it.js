@@ -156,7 +156,7 @@ const challenges = [
       'Analysen des Nutzungsverhaltens machen den Weg frei für 10x Growth.',
     imageUrl: step4,
     includedFeatures: [
-      '3 Sparring-Sessions in 3 Monaten',
+      '12 Sparring-Sessions in 3 Monaten',
       'Analytics- & Funneloptimierung',
       'A/B-Tests',
     ],

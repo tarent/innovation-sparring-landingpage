@@ -13,7 +13,7 @@ export default function TheRightIt() {
   return (
     <div className="min-h-screen bg-white">
       <Head>
-        <title>Ideen-Sprint | tarent Innovation Consulting</title>
+        <title>10x Sprint | tarent Innovation Consulting</title>
         <link rel="icon" sizes="32x32" href="/imgs/tarent-thumb-32x32.png" />
       </Head>
       <Header />
@@ -50,7 +50,7 @@ function Content() {
                 <li>
                   <div className="flex">
                     <a
-                      href="#"
+                      href="/"
                       className="text-sm font-medium text-gray-500 hover:text-gray-700"
                     >
                       Building The Right It
@@ -63,12 +63,9 @@ function Content() {
                       className="flex-shrink-0 h-5 w-5 text-gray-400"
                       aria-hidden="true"
                     />
-                    <a
-                      href="#"
-                      className="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700"
-                    >
-                      Ideen-Sprint
-                    </a>
+                    <div className="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700">
+                      10x Sprint
+                    </div>
                   </div>
                 </li>
               </ol>
@@ -78,10 +75,10 @@ function Content() {
         <div className="py-12">
           <h1>
             <span className="block text-base text-center text-tarent-red font-semibold tracking-wide uppercase">
-              Nostrud velit excepteur mit dem
+              Exponenzielles Wachstum mit dem
             </span>
             <span className="mt-2 block text-5xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-6xl">
-              Ideensprint
+              10x Sprint
             </span>
           </h1>
         </div>
@@ -102,66 +99,38 @@ function Content() {
           <div className="mt-8 lg:mt-0">
             <div className="mt-6 prose prose-red prose-lg text-gray-500 pb-8">
               <h2>
-                Kunden- und Nutzerbedürfnisse verstehen, daraus Ideen generieren
-                und testen.
+                Mit dem richtigen Funnel und echten Nutzungsdaten Gummi auf die
+                Straße bekommen.
               </h2>
             </div>
             <div className="text-base max-w-prose mx-auto lg:max-w-none">
               <p className="text-lg text-gray-500">
-                Sagittis scelerisque nulla cursus in enim consectetur quam.
-                Dictum urna sed consectetur neque tristique pellentesque.
-                Blandit amet, sed aenean erat arcu morbi.
+                Im 10x Sprint coachen wir Dich punktuell über einen Zeitraum von
+                3 Monaten und lösen gemeinsam die Hürden auf, die exponenziellem
+                Wachstum entgegenstehen.
               </p>
             </div>
             <div className="mt-5 prose prose-red text-gray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
               <p>
-                Sollicitudin tristique eros erat odio sed vitae, consequat
-                turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros
-                eu viverra donec ut volutpat donec laoreet quam urna.
-              </p>
-              <p>
-                Bibendum eu nulla feugiat justo, elit adipiscing. Ut tristique
-                sit nisi lorem pulvinar. Urna, laoreet fusce nibh leo. Dictum et
-                et et sit. Faucibus sed non gravida lectus dignissim imperdiet
-                a.
-              </p>
-              <p>
-                Dictum magnis risus phasellus vitae quam morbi. Quis lorem lorem
-                arcu, metus, egestas netus cursus. In.
+                Unsere Sparring-Sessions können remote oder vor Ort stattfinden.
+                Wir richten uns ganz nach Dir.
               </p>
               <h3>Das ist für Dich drin</h3>
               <ul role="list">
-                <li>Quis elit egestas venenatis mattis dignissim.</li>
-                <li>
-                  Cras cras lobortis vitae vivamus ultricies facilisis tempus.
-                </li>
-                <li>Orci in sit morbi dignissim metus diam arcu pretium.</li>
+                <li>Kontinuierliches Coaching über 3 Monate.</li>
+                <li>Optimierung deines Funnels und deiner Metriken.</li>
               </ul>
-              <p>
-                Rhoncus nisl, libero egestas diam fermentum dui. At quis
-                tincidunt vel ultricies. Vulputate aliquet velit faucibus
-                semper. Pellentesque in venenatis vestibulum consectetur nibh
-                id. In id ut tempus egestas. Enim sit aliquam nec, a. Morbi enim
-                fermentum lacus in. Viverra.
-              </p>
               <h3>Das bringst Du mit</h3>
               <ul role="list">
-                <li>Quis elit egestas venenatis mattis dignissim.</li>
-                <li>
-                  Cras cras lobortis vitae vivamus ultricies facilisis tempus.
-                </li>
-                <li>Orci in sit morbi dignissim metus diam arcu pretium.</li>
+                <li>Dein MVP.</li>
+                <li>Eine Analytics-Lösung mit aussagekräftigen Daten.</li>
+                <li>2 Stunden am Stück Zeit pro Woche.</li>
               </ul>
-              <p>
-                Sagittis scelerisque nulla cursus in enim consectetur quam.
-                Dictum urna sed consectetur neque tristique pellentesque.
-                Blandit amet, sed aenean erat arcu morbi.
-              </p>
             </div>
             <div className="mt-10 flex text-base max-w-prose mx-auto lg:max-w-none">
               <div className="rounded-md shadow">
                 <a
-                  href="#"
+                  href="#cta"
                   className="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-tarent-red hover:bg-red-700"
                 >
                   Kontaktiere Uns

@@ -1,8 +1,8 @@
 # Innovation Sparring Landingpage
 
-Production: [innovation.tarent.de/sparring](innovation.tarent.de/sparring)
-Production Code Without Domain: [https://innovation-sparring.netlify.app/sparring](https://innovation-sparring.netlify.app/sparring)
-Staging: [https://staging--innovation-sparring.netlify.app/sparring](https://staging--innovation-sparring.netlify.app/sparring)
+Production: [innovation.tarent.de/the-right-it](innovation.tarent.de/the-right-it)
+Production Code Without Domain: [https://innovation-sparring.netlify.app/the-right-it](https://innovation-sparring.netlify.app/the-right-it)
+Staging: [https://staging--innovation-sparring.netlify.app/the-right-it](https://staging--innovation-sparring.netlify.app/the-right-it)
 
 ## Start locally
 
@@ -27,4 +27,4 @@ We have two properties defined in GA:
 - Innovation Sparring Production
 - Innovation Sparring Staging
 
-The tags are deployed via Google Tag Manager. 
+The tags are deployed via Google Tag Manager.

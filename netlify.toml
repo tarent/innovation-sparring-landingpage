@@ -8,7 +8,7 @@
 # please add new redirects to next.config.js as well for local development
 [[redirects]]
   from = "/"
-  to = "/sparring"
+  to = "/the-right-it"
   status = 302
   force = false
 

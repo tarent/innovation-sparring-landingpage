@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { Popover, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
+import { CheckIcon } from '@heroicons/react/solid';
 
 import Footer from '../components/footer';
 
@@ -11,6 +12,8 @@ import logoWhite from '../public/imgs/logo-white.svg';
 import step1 from '../public/imgs/step-1.png';
 import step2 from '../public/imgs/step-2.png';
 import step3 from '../public/imgs/step-3.png';
+import step4 from '../public/imgs/step-3.png';
+import vorgehen from '../public/imgs/vorgehen.png';
 
 const navigation = [
   {
@@ -33,9 +36,11 @@ export default function TheRightIt() {
       <main>
         <Header />
         <Hero />
-        <Logos />
-        <Reasons />
+        <Brands />
+        <Solution />
+        <Process />
         <CTA />
+        <SuccessStories />
         <Team />
       </main>
       <Footer />
@@ -175,12 +180,12 @@ function Hero() {
   );
 }
 
-function Logos() {
+function Brands() {
   return (
-    <section id="logos" className="bg-red-600">
+    <section id="brands" className="bg-red-600">
       <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
         <p className="text-center text-sm font-semibold uppercase text-red-700 tracking-wide">
-          Innovationstreiber bei
+          Ausgewählte Referenzen
         </p>
         <div className="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-4">
           <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
@@ -275,22 +280,55 @@ function Logos() {
   );
 }
 
-const reasons = [
+const challenges = [
   {
-    text: 'Die riskantesten Teile der Idee identifizieren',
+    title: 'Discovery',
+    problem: 'Welche Ideen bringen unsere Strategie vorwärts?',
+    solution: 'Die riskantesten Teile der Idee identifizieren',
     imageUrl: step1,
+    includedFeatures: [
+      'Potenti felis, in cras at at ligula nunc.',
+      'Orci neque eget pellentesque.',
+    ],
+    buttonTitle: 'Ideen-Sprint',
   },
   {
-    text: 'Kleine, schnelle Experimente durchführen',
+    title: 'Validierung',
+    problem:
+      'Wir diskutieren seit Monaten über eine Idee und kommen nicht vorwärts.',
+    solution: 'Kleine, schnelle Experimente durchführen',
     imageUrl: step2,
+    includedFeatures: [
+      'Potenti felis, in cras at at ligula nunc.',
+      'Orci neque eget pellentesque.',
+    ],
+    buttonTitle: 'Validation Sprint',
   },
   {
-    text: 'Inkrementell und datengetrieben Software (weiter-)entwickeln',
+    title: 'Umsetzung',
+    problem: 'Wir brauchen 2 Jahre, um auf den Markt zu kommen.',
+    solution: 'Inkrementell und datengetrieben Software (weiter-)entwickeln',
     imageUrl: step3,
+    includedFeatures: [
+      'Potenti felis, in cras at at ligula nunc.',
+      'Orci neque eget pellentesque.',
+    ],
+    buttonTitle: 'MVP-Sprint',
+  },
+  {
+    title: 'Skalierung',
+    problem: 'Wie können wir die Anzahl der Nutzer verzehnfachen?',
+    solution: 'Die riskantesten Teile der Idee identifizieren',
+    imageUrl: step4,
+    includedFeatures: [
+      'Potenti felis, in cras at at ligula nunc.',
+      'Orci neque eget pellentesque.',
+    ],
+    buttonTitle: '10x-Sprint',
   },
 ];
 
-function Reasons() {
+function Solution() {
   return (
     <section className="bg-white" id="solution">
       <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
@@ -311,29 +349,89 @@ function Reasons() {
         </div>
         <ul
           role="list"
-          className="space-y-4 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:grid-cols-3 lg:gap-8"
+          className="space-y-4 sm:grid sm:grid-cols-1 sm:gap-6 sm:space-y-0 lg:grid-cols-2 lg:gap-8"
         >
-          {reasons.map((reason, index) => (
-            <li
-              key={index}
-              className="pb-8 px-6 bg-gray-50 text-center rounded-2xl xl:px-6 xl:text-left"
+          {challenges.map((challenge) => (
+            <div
+              key={challenge.title}
+              className="pt-8 border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200"
             >
-              <div className="space-y-6 xl:space-y-6">
-                <div className="mx-auto w-80">
-                  <Image src={reason.imageUrl} alt="" />
-                </div>
-                <div className="space-y-2 xl:flex xl:items-center xl:justify-between">
-                  <div className="font-medium text-lg leading-6 space-y-1">
-                    <p className="text-black text-sm uppercase">
-                      Schritt {index + 1}
-                    </p>
-                    <h3 className="text-tarent-red">{reason.text}</h3>
-                  </div>
+              <div className="p-6 text-center">
+                <h2 className="text-4xl leading-6 font-bold text-gray-900">
+                  {challenge.title}
+                </h2>
+                <p className="mt-4 text-base italic text-gray-500">
+                  &quot;{challenge.problem}&quot;
+                </p>
+                <div className="w-full px-8 lg:px-12">
+                  <Image
+                    className="object-contain w-full"
+                    src={challenge.imageUrl}
+                    alt={challenge.title}
+                  />
                 </div>
               </div>
-            </li>
+              <div className="px-4 pb-4">
+                <div className="text-center">
+                  <h3 className="mt-8 text-4xl font-bold">Unsere Lösung</h3>
+                  <p className="mt-4 text-base text-gray-500">
+                    {challenge.solution}
+                  </p>
+                </div>
+                <div className="pt-6 pb-8 px-6">
+                  <ul role="list" className="mt-6 space-y-4">
+                    {challenge.includedFeatures.map((feature) => (
+                      <li key={feature} className="flex space-x-3">
+                        <CheckIcon
+                          className="flex-shrink-0 h-5 w-5 text-green-500"
+                          aria-hidden="true"
+                        />
+                        <span className="text-sm text-gray-500">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <a
+                    href="#"
+                    className="h-16 flex items-center justify-center mt-8 block w-full bg-tarent-red border border-transparent rounded-md py-2 text-lg font-semibold text-white text-center hover:bg-red-700"
+                  >
+                    Zum {challenge.buttonTitle}
+                  </a>
+                </div>
+              </div>
+            </div>
           ))}
         </ul>
+      </div>
+    </section>
+  );
+}
+
+function Process() {
+  return (
+    <section className="bg-white" id="process">
+      <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+        <div className="text-center">
+          <h2 className="text-base font-semibold text-tarent-red tracking-wide uppercase">
+            Vorgehen
+          </h2>
+          <h1 className="mt-1 text-4xl font-regular text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
+            <span className="block">
+              Du <span className="font-extrabold">glaubst</span> daran,
+            </span>
+            <span className="block">
+              Wir <span className="font-extrabold">beweisen</span> es!
+            </span>
+          </h1>
+          <p className="max-w-xl mt-5 mx-auto text-xl text-gray-500">
+            Ea dolor do amet ut tempor dolor deserunt non minim sint adipisicing
+            aliquip irure.
+          </p>
+          <div className="w-full mt-12">
+            <Image src={vorgehen} alt="So gehen wir vor" />
+          </div>
+        </div>
       </div>
     </section>
   );
@@ -379,6 +477,117 @@ function CTA() {
           </a>
           .
         </p>
+      </div>
+    </section>
+  );
+}
+
+function SuccessStories() {
+  return (
+    <section id="success-stories" className="bg-white py-12">
+      <div className="text-center pt-8">
+        <h2 className="text-base font-semibold text-tarent-red tracking-wide uppercase">
+          referenzen
+        </h2>
+        <h1 className="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
+          Asugewählte Erfolgsgeschichten
+        </h1>
+        <p className="max-w-xl mt-5 mx-auto text-xl text-gray-500">
+          Ea dolor do amet ut tempor dolor deserunt non minim sint adipisicing
+          aliquip irure.
+        </p>
+      </div>
+      <div className="max-w-7xl mx-auto md:grid md:grid-cols-2 md:px-6 lg:px-8">
+        <div className="py-12 px-4 sm:px-6 md:flex md:flex-col md:py-16 md:pl-0 md:pr-10 lg:pr-16">
+          <div className="md:flex-shrink-0">
+            <img
+              className="h-12"
+              src="https://tailwindui.com/img/logos/tuple-logo-indigo-300.svg"
+              alt="Tuple"
+            />
+          </div>
+          <blockquote className="mt-6 md:flex-grow md:flex md:flex-col">
+            <div className="relative text-lg font-medium text-black md:flex-grow">
+              <svg
+                className="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-gray-200"
+                fill="currentColor"
+                viewBox="0 0 32 32"
+                aria-hidden="true"
+              >
+                <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
+              </svg>
+              <p className="relative">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                expedita voluptas culpa sapiente alias molestiae. Numquam
+                corrupti in laborum sed rerum et corporis.
+              </p>
+            </div>
+            <footer className="mt-8">
+              <div className="flex items-start">
+                <div className="flex-shrink-0 inline-flex rounded-full border-2 border-white">
+                  <img
+                    className="h-12 w-12 rounded-full"
+                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                    alt=""
+                  />
+                </div>
+                <div className="ml-4">
+                  <div className="text-base font-medium text-black">
+                    Judith Black
+                  </div>
+                  <div className="text-base font-medium text-indigo-700">
+                    CEO, Tuple
+                  </div>
+                </div>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+        <div className="py-12 px-4 border-t-2 border-gray-200 sm:px-6 md:py-16 md:pr-0 md:pl-10 md:border-0 lg:pl-16">
+          <div className="md:flex-shrink-0">
+            <img
+              className="h-12"
+              src="https://tailwindui.com/img/logos/workcation-logo-indigo-300.svg"
+              alt="Workcation"
+            />
+          </div>
+          <blockquote className="mt-6 md:flex-grow md:flex md:flex-col">
+            <div className="relative text-lg font-medium text-black md:flex-grow">
+              <svg
+                className="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-gray-200"
+                fill="currentColor"
+                viewBox="0 0 32 32"
+              >
+                <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
+              </svg>
+              <p className="relative">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                expedita voluptas culpa sapiente alias molestiae. Numquam
+                corrupti in laborum sed rerum et corporis. Nemo expedita
+                voluptas culpa sapiente alias molestiae.
+              </p>
+            </div>
+            <footer className="mt-8">
+              <div className="flex items-start">
+                <div className="flex-shrink-0 inline-flex rounded-full border-2 border-white">
+                  <img
+                    className="h-12 w-12 rounded-full"
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                    alt=""
+                  />
+                </div>
+                <div className="ml-4">
+                  <div className="text-base font-medium text-black">
+                    Joseph Rodriguez
+                  </div>
+                  <div className="text-base font-medium text-indigo-700">
+                    CEO, Workcation
+                  </div>
+                </div>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
       </div>
     </section>
   );

@@ -147,9 +147,13 @@ const challenges = [
     title: 'Skalierung',
     problem: 'Wie können wir die Anzahl der Nutzer verzehnfachen?',
     solution:
-      'Analysen des Nutzungsverhaltens machen den Weg frei für 10x Growth',
+      'Analysen des Nutzungsverhaltens machen den Weg frei für 10x Growth.',
     imageUrl: step4,
-    includedFeatures: ['Analytics', 'Marketing-Funnel', 'A/B-Tests'],
+    includedFeatures: [
+      '3 Sparring-Sessions in 3 Monaten',
+      'Analytics- & Funneloptimierung',
+      'A/B-Tests',
+    ],
     buttonTitle: '10x-Sprint',
     href: '/the-right-it/10x-sprint',
   },

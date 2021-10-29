@@ -170,9 +170,6 @@ function Solution() {
             Monate oder Jahre an Software zu tüfteln, die am Ende niemanden
             interessiert, ist Zeitverschwendung.
           </p>
-          <h2 className="mt-4 text-base font-semibold text-red-600 tracking-wide uppercase">
-            Lass&apos; uns vom Trab in den Sprint wechseln
-          </h2>
         </div>
         <ul
           role="list"
@@ -220,7 +217,7 @@ function Solution() {
                 </div>
                 <div>
                   <a
-                    href="#"
+                    href={challenge.href}
                     className="h-16 flex items-center justify-center mt-8 block w-full bg-tarent-red border border-transparent rounded-md py-2 text-lg font-semibold text-white text-center hover:bg-red-700"
                   >
                     Zum {challenge.buttonTitle}
@@ -252,10 +249,11 @@ function Process() {
             </span>
           </h1>
           <p className="max-w-xl mt-5 mx-auto text-xl text-gray-500">
-            Ea dolor do amet ut tempor dolor deserunt non minim sint adipisicing
-            aliquip irure.
+            Unsere Sprints bauen sinnvoll aufeinander auf. <br />
+            Gleichzeitig bringt Dich jedes Zwischenergebnis weiter für maximale
+            Flexibilität.
           </p>
-          <div className="w-full mt-12">
+          <div className="w-full max-w-3xl mx-auto mt-12">
             <Image src={vorgehen} alt="So gehen wir vor" />
           </div>
         </div>

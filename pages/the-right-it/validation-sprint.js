@@ -42,7 +42,7 @@ function Content() {
                   className="flex-shrink-0 -ml-1 mr-1 h-5 w-5 text-gray-400"
                   aria-hidden="true"
                 />
-                Back
+                Zurück
               </a>
             </nav>
             <nav className="hidden sm:flex" aria-label="Breadcrumb">

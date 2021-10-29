@@ -1,30 +1,17 @@
-import { Fragment } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
-import { Popover, Transition } from '@headlessui/react';
-import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import { CheckIcon } from '@heroicons/react/solid';
 
+import Header from '../components/the-right-it/header';
+import CTA from '../components/the-right-it/cta';
+import SuccessStories from '../components/the-right-it/success-stories';
 import Footer from '../components/footer';
 
-import logo from '../public/imgs/logo.svg';
-import logoWhite from '../public/imgs/logo-white.svg';
 import step1 from '../public/imgs/step-1.png';
 import step2 from '../public/imgs/step-2.png';
 import step3 from '../public/imgs/step-3.png';
 import step4 from '../public/imgs/step-3.png';
 import vorgehen from '../public/imgs/vorgehen.png';
-
-const navigation = [
-  {
-    name: "So geht's",
-    href: '#solution',
-  },
-  {
-    name: 'Expertengespräch buchen',
-    href: '#cta',
-  },
-];
 
 export default function TheRightIt() {
   return (
@@ -45,97 +32,6 @@ export default function TheRightIt() {
       </main>
       <Footer />
     </div>
-  );
-}
-
-function Header() {
-  return (
-    <header className="fixed top-0 left-0 right-0 h-24 z-10">
-      <Popover className="relative bg-tarent-red">
-        <div className="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
-          <div className="flex justify-start items-center lg:w-0 lg:flex-1">
-            <a href="#">
-              <span className="sr-only">tarent Innovation Consulting</span>
-              <div className="h-8 w-auto sm:h-10">
-                <Image src={logoWhite} alt="" height={40} width={40} />
-              </div>
-            </a>
-            <h1 className="text-lg ml-2 text-white">
-              <span>tarent </span>
-              <span className="text-lg font-medium">Innovation Consulting</span>
-            </h1>
-          </div>
-          <div className="-mr-2 -my-2 md:hidden">
-            <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-500">
-              <span className="sr-only">Menü öffnen</span>
-              <MenuIcon className="h-6 w-6" aria-hidden="true" />
-            </Popover.Button>
-          </div>
-          <Popover.Group as="nav" className="hidden md:flex space-x-10">
-            {navigation.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="text-base font-medium text-red-300 hover:text-red-100"
-              >
-                {item.name}
-              </a>
-            ))}
-          </Popover.Group>
-          <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0"></div>
-        </div>
-
-        <Transition
-          as={Fragment}
-          enter="duration-200 ease-out"
-          enterFrom="opacity-0 scale-95"
-          enterTo="opacity-100 scale-100"
-          leave="duration-100 ease-in"
-          leaveFrom="opacity-100 scale-100"
-          leaveTo="opacity-0 scale-95"
-        >
-          <Popover.Panel
-            focus
-            className="absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
-          >
-            <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
-              <div className="pt-5 pb-6 px-5">
-                <div className="flex items-center justify-between">
-                  <div>
-                    <Image src={logo} alt="tarent" height={40} width={40} />
-                  </div>
-                  <h1 className="text-lg ml-2 text-gray-800">
-                    <span>tarent </span>
-                    <span className="text-lg font-medium">
-                      Innovation Consulting
-                    </span>
-                  </h1>
-                  <div className="-mr-2">
-                    <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-500">
-                      <span className="sr-only">Close menu</span>
-                      <XIcon className="h-6 w-6" aria-hidden="true" />
-                    </Popover.Button>
-                  </div>
-                </div>
-              </div>
-              <div className="py-6 px-5">
-                <div className="grid grid-cols-2 gap-4">
-                  {navigation.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      className="text-base font-medium text-gray-900 hover:text-gray-700"
-                    >
-                      {item.name}
-                    </a>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </Popover.Panel>
-        </Transition>
-      </Popover>
-    </header>
   );
 }
 
@@ -291,40 +187,46 @@ const challenges = [
       'Orci neque eget pellentesque.',
     ],
     buttonTitle: 'Ideen-Sprint',
+    href: '/the-right-it/ideen-sprint',
   },
   {
     title: 'Validierung',
     problem:
       'Wir diskutieren seit Monaten über eine Idee und kommen nicht vorwärts.',
-    solution: 'Kleine, schnelle Experimente durchführen',
+    solution:
+      'Kleine schnelle Experimente bringen Markt-Feedback innerhalb von Stunden.',
     imageUrl: step2,
     includedFeatures: [
       'Potenti felis, in cras at at ligula nunc.',
       'Orci neque eget pellentesque.',
     ],
     buttonTitle: 'Validation Sprint',
+    href: '/the-right-it/validation-sprint',
   },
   {
     title: 'Umsetzung',
     problem: 'Wir brauchen 2 Jahre, um auf den Markt zu kommen.',
-    solution: 'Inkrementell und datengetrieben Software (weiter-)entwickeln',
+    solution:
+      'Inkrementell und datengetrieben (weiter-)entiwckelte Software. Launch early, launch often!',
     imageUrl: step3,
     includedFeatures: [
       'Potenti felis, in cras at at ligula nunc.',
       'Orci neque eget pellentesque.',
     ],
-    buttonTitle: 'MVP-Sprint',
+    buttonTitle: 'Build-Sprint',
+    href: '/the-right-it/build-sprint',
   },
   {
     title: 'Skalierung',
     problem: 'Wie können wir die Anzahl der Nutzer verzehnfachen?',
-    solution: 'Die riskantesten Teile der Idee identifizieren',
+    solution: 'wow',
     imageUrl: step4,
     includedFeatures: [
       'Potenti felis, in cras at at ligula nunc.',
       'Orci neque eget pellentesque.',
     ],
     buttonTitle: '10x-Sprint',
+    href: '/the-right-it/10x-sprint',
   },
 ];
 
@@ -431,162 +333,6 @@ function Process() {
           <div className="w-full mt-12">
             <Image src={vorgehen} alt="So gehen wir vor" />
           </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function CTA() {
-  return (
-    <section className="bg-tarent-red" id="cta">
-      <div className="max-w-3xl mx-auto text-center py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
-          <span className="block">Bezahlende Nutzer von Tag 1 an,</span>
-          <span className="block">
-            <span className="text-red-400">oder</span> früh wissen, wann ein
-            Pivot ansteht.
-          </span>
-        </h2>
-        <p className="mt-4 text-lg leading-6 text-red-200">
-          In einem 30-minütigen Expertengespräch teilen wir unsere einzigartigen
-          Erfahrungen als Ex-Startup-Gründer und erarbeiten mit dir Deine
-          <span className="font-bold text-white"> Roadmap zu Kunde #1</span>.
-        </p>
-        <a
-          id="cta-cta"
-          href="https://meetings.hubspot.com/frederik-vosberg/innovation-sparring"
-          target="_blank"
-          rel="noreferrer"
-          className="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-red-600 bg-white hover:bg-indigo-50 sm:w-auto"
-        >
-          Kostenloses Expertengespräch vereinbaren
-        </a>
-        <p className="text-xs text-red-200 mt-5">
-          Du hast die Möglichkeit, dir über diesen Weg einen freien
-          Kontakttermin im Kalender eines tarent-Ansprechpartners zu buchen. Für
-          diese Funktion nutzen wir den Service der Firma Hubspot. Die
-          Datenschutzerklärung der Firma Hubspot findest Du{' '}
-          <a
-            href="https://legal.hubspot.com/de/privacy-policy"
-            target="_blank"
-            rel="noreferrer noopener"
-            className="underline hover:text-gray-50"
-          >
-            hier
-          </a>
-          .
-        </p>
-      </div>
-    </section>
-  );
-}
-
-function SuccessStories() {
-  return (
-    <section id="success-stories" className="bg-white py-12">
-      <div className="text-center pt-8">
-        <h2 className="text-base font-semibold text-tarent-red tracking-wide uppercase">
-          referenzen
-        </h2>
-        <h1 className="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
-          Asugewählte Erfolgsgeschichten
-        </h1>
-        <p className="max-w-xl mt-5 mx-auto text-xl text-gray-500">
-          Ea dolor do amet ut tempor dolor deserunt non minim sint adipisicing
-          aliquip irure.
-        </p>
-      </div>
-      <div className="max-w-7xl mx-auto md:grid md:grid-cols-2 md:px-6 lg:px-8">
-        <div className="py-12 px-4 sm:px-6 md:flex md:flex-col md:py-16 md:pl-0 md:pr-10 lg:pr-16">
-          <div className="md:flex-shrink-0">
-            <img
-              className="h-12"
-              src="https://tailwindui.com/img/logos/tuple-logo-indigo-300.svg"
-              alt="Tuple"
-            />
-          </div>
-          <blockquote className="mt-6 md:flex-grow md:flex md:flex-col">
-            <div className="relative text-lg font-medium text-black md:flex-grow">
-              <svg
-                className="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-gray-200"
-                fill="currentColor"
-                viewBox="0 0 32 32"
-                aria-hidden="true"
-              >
-                <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
-              </svg>
-              <p className="relative">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                expedita voluptas culpa sapiente alias molestiae. Numquam
-                corrupti in laborum sed rerum et corporis.
-              </p>
-            </div>
-            <footer className="mt-8">
-              <div className="flex items-start">
-                <div className="flex-shrink-0 inline-flex rounded-full border-2 border-white">
-                  <img
-                    className="h-12 w-12 rounded-full"
-                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                    alt=""
-                  />
-                </div>
-                <div className="ml-4">
-                  <div className="text-base font-medium text-black">
-                    Judith Black
-                  </div>
-                  <div className="text-base font-medium text-indigo-700">
-                    CEO, Tuple
-                  </div>
-                </div>
-              </div>
-            </footer>
-          </blockquote>
-        </div>
-        <div className="py-12 px-4 border-t-2 border-gray-200 sm:px-6 md:py-16 md:pr-0 md:pl-10 md:border-0 lg:pl-16">
-          <div className="md:flex-shrink-0">
-            <img
-              className="h-12"
-              src="https://tailwindui.com/img/logos/workcation-logo-indigo-300.svg"
-              alt="Workcation"
-            />
-          </div>
-          <blockquote className="mt-6 md:flex-grow md:flex md:flex-col">
-            <div className="relative text-lg font-medium text-black md:flex-grow">
-              <svg
-                className="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-gray-200"
-                fill="currentColor"
-                viewBox="0 0 32 32"
-              >
-                <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
-              </svg>
-              <p className="relative">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                expedita voluptas culpa sapiente alias molestiae. Numquam
-                corrupti in laborum sed rerum et corporis. Nemo expedita
-                voluptas culpa sapiente alias molestiae.
-              </p>
-            </div>
-            <footer className="mt-8">
-              <div className="flex items-start">
-                <div className="flex-shrink-0 inline-flex rounded-full border-2 border-white">
-                  <img
-                    className="h-12 w-12 rounded-full"
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                    alt=""
-                  />
-                </div>
-                <div className="ml-4">
-                  <div className="text-base font-medium text-black">
-                    Joseph Rodriguez
-                  </div>
-                  <div className="text-base font-medium text-indigo-700">
-                    CEO, Workcation
-                  </div>
-                </div>
-              </div>
-            </footer>
-          </blockquote>
         </div>
       </div>
     </section>

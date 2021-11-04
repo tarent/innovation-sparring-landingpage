@@ -203,6 +203,7 @@ function Solution() {
                     className="object-contain w-full"
                     src={challenge.imageUrl}
                     alt={challenge.title}
+                    placeholder="blur"
                   />
                 </div>
               </div>
@@ -265,7 +266,7 @@ function Process() {
             Flexibilität.
           </p>
           <div className="w-full max-w-3xl mx-auto mt-12">
-            <Image src={vorgehen} alt="So gehen wir vor" />
+            <Image src={vorgehen} alt="So gehen wir vor" placeholder="blur" />
           </div>
         </div>
       </div>

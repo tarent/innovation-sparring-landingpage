@@ -91,6 +91,7 @@ function Content() {
                     className="rounded-lg shadow-lg object-contain object-center"
                     src={step1}
                     alt="Whitney leaning against a railing on a downtown street"
+                    placeholder="blur"
                   />
                 </div>
               </figure>

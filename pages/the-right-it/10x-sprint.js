@@ -89,8 +89,9 @@ function Content() {
                 <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
                   <Image
                     className="rounded-lg shadow-lg object-contain object-center"
-                    src={step1}
+                    src={step4}
                     alt="Whitney leaning against a railing on a downtown street"
+                    placeholder="blur"
                   />
                 </div>
               </figure>

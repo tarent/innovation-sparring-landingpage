@@ -7,7 +7,7 @@ import SuccessStories from '../../components/the-right-it/success-stories';
 import CTA from '../../components/the-right-it/cta';
 import Footer from '../../components/footer';
 
-import step1 from '../../public/imgs/step-1.png';
+import step4 from '../../public/imgs/step-4.png';
 
 export default function TheRightIt() {
   return (
@@ -42,7 +42,7 @@ function Content() {
                   className="flex-shrink-0 -ml-1 mr-1 h-5 w-5 text-gray-400"
                   aria-hidden="true"
                 />
-                Back
+                Zurück
               </a>
             </nav>
             <nav className="hidden sm:flex" aria-label="Breadcrumb">

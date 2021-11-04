@@ -10,7 +10,7 @@ import Footer from '../components/footer';
 import step1 from '../public/imgs/step-1.png';
 import step2 from '../public/imgs/step-2.png';
 import step3 from '../public/imgs/step-3.png';
-import step4 from '../public/imgs/step-3.png';
+import step4 from '../public/imgs/step-4.png';
 import vorgehen from '../public/imgs/vorgehen.png';
 
 import stabilo from '../public/imgs/stabilo-white.svg';

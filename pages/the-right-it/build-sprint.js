@@ -29,7 +29,7 @@ export default function TheRightIt() {
 
 function Content() {
   return (
-    <div className="pt-32 bg-white overflow-hidden">
+    <section id="solution" className="pt-32 bg-white overflow-hidden">
       <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
         <div className="flex justify-center">
           <div>
@@ -138,6 +138,6 @@ function Content() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

@@ -56,7 +56,7 @@ function Hero() {
               </p>
               <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center gap-4">
                 <a
-                  href="https://meetings.hubspot.com/frederik-vosberg/innovation-sparring"
+                  href="mailto:innovation@tarent.de?subject=Mein%20Innovation%20Sparring&body=Hi%20Leute%2C%0D%0A%0D%0Aich%20fand%20eure%20Angebote%20sehr%20spannend!%20Gerne%20w%C3%BCrde%20ich%20mir%20ein%20Innovation%20Sparring%20bei%20Euch%20abholen.%20Macht%20mir%20doch%20einfach%20mal%203%20Terminvorschl%C3%A4ge%20in%20den%20n%C3%A4chsten%20paar%20Tagen.%0D%0A%0D%0AViele%20Gr%C3%BC%C3%9Fe!"
                   target="_blank"
                   rel="noreferrer"
                   id="hero-cta"

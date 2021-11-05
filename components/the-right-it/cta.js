@@ -20,28 +20,13 @@ export default function CTA() {
         </p>
         <a
           id="cta-cta"
-          href="https://meetings.hubspot.com/frederik-vosberg/innovation-sparring"
+          href="mailto:innovation@tarent.de?subject=Mein%20Innovation%20Sparring&body=Hi%20Leute%2C%0D%0A%0D%0Aich%20fand%20eure%20Angebote%20sehr%20spannend!%20Gerne%20w%C3%BCrde%20ich%20mir%20ein%20Innovation%20Sparring%20bei%20Euch%20abholen.%20Macht%20mir%20doch%20einfach%20mal%203%20Terminvorschl%C3%A4ge%20in%20den%20n%C3%A4chsten%20paar%20Tagen.%0D%0A%0D%0AViele%20Gr%C3%BC%C3%9Fe!"
           target="_blank"
           rel="noreferrer"
-          className="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-red-600 bg-white hover:bg-indigo-50 sm:w-auto"
+          className="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-red-600 bg-white hover:bg-red-50 sm:w-auto"
         >
           Jetzt Termin ausmachen
         </a>
-        <p className="text-xs text-red-200 mt-5">
-          Du hast die Möglichkeit, dir über diesen Weg einen freien
-          Kontakttermin im Kalender eines tarent-Ansprechpartners zu buchen. Für
-          diese Funktion nutzen wir den Service der Firma Hubspot. Die
-          Datenschutzerklärung der Firma Hubspot findest Du{' '}
-          <a
-            href="https://legal.hubspot.com/de/privacy-policy"
-            target="_blank"
-            rel="noreferrer noopener"
-            className="underline hover:text-gray-50"
-          >
-            hier
-          </a>
-          .
-        </p>
       </div>
     </section>
   );

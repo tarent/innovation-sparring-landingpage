@@ -13,6 +13,7 @@ import step3 from '../public/imgs/step-3.png';
 import step4 from '../public/imgs/step-4.png';
 import vorgehen from '../public/imgs/vorgehen.png';
 
+import og from '../public/imgs/og-image.png';
 import stabilo from '../public/imgs/stabilo-white.svg';
 import smive from '../public/imgs/smive-white.svg';
 import itenos from '../public/imgs/itenos-white.svg';
@@ -23,6 +24,7 @@ export default function TheRightIt() {
       <Head>
         <title>Build The Right It | tarent Innovation Consulting</title>
         <link rel="icon" sizes="32x32" href="/imgs/tarent-thumb-32x32.png" />
+        <meta property="og:image" content={og.src} />
       </Head>
       <main>
         <Header />

@@ -15,6 +15,7 @@ export default function TheRightIt() {
       <Head>
         <title>Ideen-Sprint | tarent Innovation Consulting</title>
         <link rel="icon" sizes="32x32" href="/imgs/tarent-thumb-32x32.png" />
+        <meta property="og:image" content={step1.src} />
       </Head>
       <Header />
       <main>

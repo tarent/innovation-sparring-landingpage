@@ -142,7 +142,9 @@ const Hero = () => (
                 <div className="mt-10 sm:flex sm:justify-center lg:justify-start">
                   <div className="rounded-md shadow">
                     <a
-                      href="#"
+                      href="https://miro.com/app/board/o9J_lwLUvIU=/"
+                      target="_blank"
+                      rel="noreferrer"
                       className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-tarent-red hover:bg-tarent-red-700 md:py-4 md:text-lg md:px-10"
                     >
                       Hier geht&apos;s zum miro-Template

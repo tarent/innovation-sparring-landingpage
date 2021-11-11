@@ -35,7 +35,7 @@ function Content() {
           <div>
             <nav className="sm:hidden" aria-label="Back">
               <a
-                href="#"
+                href="/"
                 className="flex items-center text-sm font-medium text-gray-500 hover:text-gray-700"
               >
                 <ChevronLeftIcon
@@ -118,7 +118,7 @@ function Content() {
               <h3>Das bringst Du mit</h3>
               <ul role="list">
                 <li>Deine validierte Idee.</li>
-                <li>Ein klares.</li>
+                <li>Ein klares Geschäftsmodell.</li>
                 <li>
                   2 Tage Zeit in 4 Wochen für Reviews, Learnings und
                   Anpassungen.

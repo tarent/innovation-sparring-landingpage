@@ -148,7 +148,7 @@ const challenges = [
       'Aussagekräftiges Feedback nach nur 4 Wochen',
       'Unschlagbare Time-to-Market',
     ],
-    buttonTitle: 'Build-Sprint',
+    buttonTitle: 'Build Sprint',
     href: '/the-right-it/build-sprint',
   },
   {
@@ -162,7 +162,7 @@ const challenges = [
       'Analytics- & Funneloptimierung',
       'A/B-Tests',
     ],
-    buttonTitle: '10x-Sprint',
+    buttonTitle: '10x-Sprints',
     href: '/the-right-it/10x-sprint',
   },
 ];

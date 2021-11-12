@@ -162,7 +162,7 @@ const challenges = [
       'Analytics- & Funneloptimierung',
       'A/B-Tests',
     ],
-    buttonTitle: '10x-Sprints',
+    buttonTitle: '10x Sprint',
     href: '/the-right-it/10x-sprint',
   },
 ];

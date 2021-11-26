@@ -11,6 +11,7 @@ import step1 from '../public/imgs/step-1.png';
 import step2 from '../public/imgs/step-2.png';
 import step3 from '../public/imgs/step-3.png';
 import step4 from '../public/imgs/step-4.png';
+import designSprint from '../public/imgs/design-sprint.png';
 import vorgehen from '../public/imgs/vorgehen.png';
 
 import og from '../public/imgs/og-image.png';
@@ -241,6 +242,74 @@ function Solution() {
             </div>
           ))}
         </ul>
+        <div className="text-center mt-12">
+          <p className="max-w-xl mt-5 mx-auto text-xl text-gray-500">
+            Oder für bestehende Software
+          </p>
+        </div>
+        <div
+          key="design-sprint"
+          className="mt-8 border border-gray-200 rounded-lg shadow-sm divide-x divide-gray-200 flex flex-wrap"
+        >
+          <div className="w-full lg:w-1/3 flex flex-col justify-between pt-8">
+            <div className="p-6 text-center">
+              <h2 className="text-4xl leading-6 font-bold text-gray-900">
+                Design Sprints
+              </h2>
+              <p className="mt-4 text-base italic text-gray-500">
+                &quot;Wir wissen nicht, wie wir unser bestehendes Produkt
+                sinnvoll erweitern sollen.&quot;
+              </p>
+            </div>
+            <div className="px-4 pb-4">
+              <div className="text-center">
+                <h3 className="mt-8 text-4xl font-bold">Unsere Lösung</h3>
+                <p className="mt-4 px-20 text-base text-gray-500">
+                  Mit dem Design Sprint einen Prototypen bauen und testen - in
+                  nur 4 Tagen!
+                </p>
+              </div>
+              <div className="pt-6 pb-8 px-6">
+                <ul role="list" className="mt-6 space-y-4">
+                  <li className="flex space-x-3">
+                    <CheckIcon
+                      className="flex-shrink-0 h-5 w-5 text-green-500"
+                      aria-hidden="true"
+                    />
+                    <span className="text-sm text-gray-500">
+                      In nur 2 Ganztagesworkshops zu wertvollen Erkenntnissen.
+                    </span>
+                  </li>
+                  <li className="flex space-x-3">
+                    <CheckIcon
+                      className="flex-shrink-0 h-5 w-5 text-green-500"
+                      aria-hidden="true"
+                    />
+                    <span className="text-sm text-gray-500">
+                      Wir kümmern uns um Clickdummy und User Tests
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <a
+                  href="/the-right-it/design-sprint"
+                  className="h-16 flex items-center justify-center mt-8 block w-full bg-tarent-red border border-transparent rounded-md py-2 text-lg font-semibold text-white text-center hover:bg-red-700"
+                >
+                  Zum Design Sprint
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="w-full lg:w-2/3">
+            <Image
+              className="object-contain w-full"
+              src={designSprint}
+              alt="Design Sprints"
+              placeholder="blur"
+            />
+          </div>
+        </div>
       </div>
     </section>
   );

@@ -29,6 +29,24 @@ export default function CTA({ formId }) {
               portalId="2420272"
               formId={formId}
               loading={<div>Loading...</div>}
+              onSubmit={()=> {
+                console.log("submit - start");
+                setTimeout(function() {
+                  console.log("submit - async");
+                }, 1000);
+              }}
+              onFormSubmit={()=>{
+                console.log("formSubmit - start");
+                setTimeout(function() {
+                  console.log("formSubmit - async");
+                }, 1000);
+              }}
+              onFormSubmitted={()=> {
+                console.log("formSubmitted - start");
+                setTimeout(function() {
+                  console.log("formSubmitted - async");
+                }, 1000);
+              }}
             />
           ) : (
             <a

@@ -9,7 +9,7 @@ export default class MyDocument extends Document {
         <Head>
           <link rel="preconnect" href="//privacy-proxy.usercentrics.eu" />
           <script id="usercentrics-cmp" data-settings-id="yQ9OHJrhP" src="https://app.usercentrics.eu/browser-ui/latest/bundle_legacy.js" async=""></script>
-          <script dangerouslySetInnerHTML={{
+          <script data-usercentrics="Google Tag Manager" dangerouslySetInnerHTML={{
             __html: `
               (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
               new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],

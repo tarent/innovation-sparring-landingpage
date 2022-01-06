@@ -9,11 +9,10 @@ export default class MyDocument extends Document {
         <Head>
           <link rel="preconnect" href="//privacy-proxy.usercentrics.eu" />
           <script id="usercentrics-cmp" data-settings-id="yQ9OHJrhP" src="https://app.usercentrics.eu/browser-ui/latest/bundle_legacy.js" async=""></script>
-          {/* Google Tag Manager - IMPORTANT! I've changed the index of getElementsByTagName to 1 in order to load the gtm after usercentrics-cmp!!!! */}
           <script dangerouslySetInnerHTML={{
             __html: `
               (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[1],
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
               j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
               })(window,document,'script','dataLayer','${GOOGLE_TAG_MANAGER_ID}');

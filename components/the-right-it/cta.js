@@ -1,5 +1,10 @@
 import { useRouter } from 'next/router';
-import HubspotForm from 'react-hubspot-form';
+import dynamic from 'next/dynamic';
+
+const HubspotForm = dynamic(
+  () => import('react-hubspot-form'),
+  { ssr: false }
+)
 
 export default function CTA({ formId }) {
   const router = useRouter();

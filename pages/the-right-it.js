@@ -60,8 +60,6 @@ function Hero() {
               <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center gap-4">
                 <a
                   href="#cta"
-                  target="_blank"
-                  rel="noreferrer"
                   id="hero-cta"
                   className="mb-2 flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-red-700 bg-white hover:bg-red-50 sm:px-8"
                 >

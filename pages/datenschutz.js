@@ -35,8 +35,12 @@ const CTA = () => (
     </section>
     <section className="bg-white">
       <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
-        <div className="uc-embed prose" uc-layout="privacySettings"></div>
 
+        <h1 className="text-center text-5xl font-extrabold tracking-tight sm:text-6xl lg:text-7xl">
+          1. Datenschutz auf einen Blick
+        </h1>
+
+        <div className="uc-embed prose" uc-layout="privacySettings"></div>
       </div>
     </section>
   </div>

@@ -5,13 +5,6 @@
 [build.environment]
   GOOGLE_TAG_MANAGER_ID = "GTM-WZ64VB3"
 
-# please add new redirects to next.config.js as well for local development
-[[redirects]]
-  from = "/"
-  to = "/the-right-it"
-  status = 302
-  force = false
-
 # Production context:
 # All deploys from the main repository branch
 # will inherit these settings.

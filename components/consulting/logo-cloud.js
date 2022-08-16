@@ -47,8 +47,8 @@ export default function LogoCloud() {
           </h2>
           <div className="flow-root self-center mt-8">
             <div className="-mt-4 -ml-8 flex flex-wrap justify-between">
-              {logos.map((logo) => (
-                <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center">
+              {logos.map((logo, n) => (
+                <div key={n} className="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center">
                   <img
                     className="h-12" src={logo.src} alt={logo.alt}
                   />

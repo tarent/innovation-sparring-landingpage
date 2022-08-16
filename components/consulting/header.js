@@ -78,7 +78,7 @@ export default function Header() {
                   href="#cta"
                   className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-red-600 bg-white hover:bg-gray-50"
                 >
-                  Erzähl' uns von Deiner Idee
+                  Erzähl&apos; uns von Deiner Idee
                 </a>
               </span>
             </div>

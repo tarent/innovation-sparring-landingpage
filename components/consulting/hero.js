@@ -18,7 +18,7 @@ export default function Hero() {
               id="hero-cta"
               className="mb-2 flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-red-600 hover:bg-red-700 sm:px-8"
             >
-              Erzähl' uns von Deiner Idee
+              Erzähl&apos; uns von Deiner Idee
             </a>
           </div>
         </div>

@@ -10,8 +10,7 @@ export default class MyDocument extends Document {
           <link rel="preconnect" href="//privacy-proxy.usercentrics.eu" />
           {/* async has to be set to false. Otherwise usercentrics blocks next.js scripts */}
           <script id="usercentrics-cmp" data-settings-id="3Pz-uWeKT" src="https://app.usercentrics.eu/browser-ui/latest/bundle_legacy.js" async=""></script>
--          {/* Google Tag Manager */}
-+          {/* Google Tag Manager - IMPORTANT! I've changed the index of getElementsByTagName to 1 in order to load the gtm after usercentrics-cmp!!!! */}
+          {/* Google Tag Manager - IMPORTANT! I've changed the index of getElementsByTagName to 1 in order to load the gtm after usercentrics-cmp!!!! */}
            <script dangerouslySetInnerHTML={{
              __html: `
                (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

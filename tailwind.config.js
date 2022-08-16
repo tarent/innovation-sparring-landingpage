@@ -15,6 +15,9 @@ module.exports = {
           'red-700': '#aa0000',
           black: '#333333',
         },
+        logo: {
+          gray: '#f1f1f1',
+        }
       },
       fontFamily: {
         sans: ['"Ubuntu"', ...defaultTheme.fontFamily.sans],
@@ -25,5 +28,6 @@ module.exports = {
   plugins: [
     require('@tailwindcss/aspect-ratio'),
     require('@tailwindcss/typography'),
+    require('@tailwindcss/forms'),
   ],
 };

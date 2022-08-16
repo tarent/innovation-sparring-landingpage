@@ -1,6 +1,6 @@
 [build]
   command = "npm run build"
-  publish = "out"
+  publish = ".next"
 
 [build.environment]
   GOOGLE_TAG_MANAGER_ID = "GTM-WZ64VB3"

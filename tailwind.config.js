@@ -20,7 +20,7 @@ module.exports = {
         }
       },
       fontFamily: {
-        sans: ['"Ubuntu"', ...defaultTheme.fontFamily.sans],
+        sans: [...defaultTheme.fontFamily.sans],
       },
     },
   },

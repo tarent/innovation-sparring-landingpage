@@ -1,7 +1,7 @@
 const footerNavigation = {
   main: [
     { name: 'Impressum', href: 'https://www.tarent.de/impressum' },
-    { name: 'Datenschutz', href: 'https://www.tarent.de/datenschutz' },
+    { name: 'Datenschutz', href: 'https://innovation.tarent.de/datenschutz' },
   ],
 };
 

@@ -1,7 +1,7 @@
 const footerNavigation = {
   main: [
     { name: 'Impressum', href: 'https://www.tarent.de/impressum' },
-    { name: 'Datenschutz', href: 'https://innovation.tarent.de/datenschutz' },
+    { name: 'Datenschutz', href: 'https://www.tarent.de/datenschutz' },
   ],
 };
 
@@ -25,7 +25,7 @@ export default function Footer() {
             ))}
           </nav>
           <p className="mt-8 text-center text-base text-gray-400">
-            &copy; 2022 tarent solutions GmbH. All rights reserved.
+            &copy; 2023 Qvest Digital AG. All rights reserved.
           </p>
         </div>
       </footer>

@@ -4,7 +4,7 @@
 
 [build.environment]
   GOOGLE_TAG_MANAGER_ID = "GTM-WZ64VB3"
-  NODE_VERSION = "14"
+  NODE_VERSION = "16"
 
 # Production context:
 # All deploys from the main repository branch
